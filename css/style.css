@@ -31838,3 +31838,58 @@ html[dir="rtl"] .sw-deliveryfaq-help-point span {
 html[dir="rtl"] #swEnquiryPhone {
     text-align: right;
 }
+
+/* Keep product filter headings readable in dark mode. */
+html.dark-mode .sw-products-filter-heading h2,
+html.dark-mode .sw-products-filter-panel-top h3,
+html.dark-mode .sw-products-filter-card h3 {
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   PRODUCTS GUIDE HELP CARD — DARK MODE
+========================================= */
+
+html.dark-mode .sw-products-guide-checklist .sw-products-guide-help {
+    background-color: #102B43 !important;
+    color: #F5F3EE !important;
+    border-color: #344454 !important;
+    transition: background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+html.dark-mode .sw-products-guide-checklist .sw-products-guide-help strong,
+html.dark-mode .sw-products-guide-checklist .sw-products-guide-help small,
+html.dark-mode .sw-products-guide-checklist .sw-products-guide-help i {
+    color: #F5F3EE !important;
+}
+
+html.dark-mode .sw-products-guide-checklist .sw-products-guide-help:hover {
+    background-color: #1B354B !important;
+    border-color: #F5F3EE !important;
+}
+
+
+/* Customization helper icon — Dark Mode */
+html.dark-mode .sw-studio-helper>i {
+    color: #F5F3EE !important;
+}
+
+
+/* Dark mode — Live updates indicator visibility */
+html.dark-mode .sw-studio-live>span {
+    background-color: #F5F3EE !important;
+    box-shadow: 0 0 0 3px rgba(245, 243, 238, 0.14);
+    opacity: 1 !important;
+}
+
+
+/* Dark mode — Interactive guide dot visibility */
+html.dark-mode .sw-material-tool .sw-material-live>span,
+html.dark-mode .sw-material-tool .sw-material-interactive>span {
+    background-color: #F5F3EE !important;
+    box-shadow: 0 0 0 3px rgba(245, 243, 238, 0.16) !important;
+    opacity: 1 !important;
+}
