@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="sw-header" id="siteHeader">
+        <div class="sw-header-inner">
+
+            <!-- Logo: Left Edge -->
+            <a href="index.html" class="sw-logo" aria-label="ShedWorks Home">
+                <img src="images/logo.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+            </a>
+
+            <!-- Desktop Navigation: Center -->
+            <nav class="sw-desktop-nav" aria-label="Main navigation">
+                <div class="sw-nav-item sw-home-item">
+                    <button class="sw-nav-link sw-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-home-dropdown" id="swHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="sw-nav-link">About</a>
+                <a href="products.html" class="sw-nav-link">Products</a>
+                <a href="customization.html" class="sw-nav-link">Customization</a>
+                <a href="delivery-installation.html" class="sw-nav-link">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html" class="sw-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions: Right Edge -->
+            <div class="sw-desktop-actions">
+
+                <button class="sw-icon-btn sw-theme-toggle" type="button" aria-label="Enable dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="sw-icon-btn sw-rtl-toggle" type="button" aria-label="Switch to RTL layout"
+                    aria-pressed="false" title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="sw-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="sw-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="swMobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation Panel -->
+        <div class="sw-mobile-menu" id="swMobileMenu" aria-hidden="true">
+
+            <nav class="sw-mobile-nav" aria-label="Mobile navigation">
+
+                <div class="sw-mobile-home">
+                    <button class="sw-mobile-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swMobileHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-mobile-home-dropdown" id="swMobileHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="customization.html">Customization</a>
+                <a href="delivery-installation.html">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <!-- Toggles and Login Inside Responsive Menu -->
+            <div class="sw-mobile-actions">
+
+                <button class="sw-mobile-action sw-theme-toggle" type="button" aria-label="Enable dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="sw-mobile-action sw-rtl-toggle" type="button" aria-pressed="false"
+                    aria-label="Switch to RTL layout">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL</span>
+                </button>
+
+                <a href="login.html" class="sw-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- =============== END HEADER =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — COMMON INNER PAGE HERO
+========================================= -->
+    <section class="sw-pagehero di-banner" id="pageHero">
+
+        <div class="sw-pagehero-overlay"></div>
+
+        <div class="sw-pagehero-container">
+
+            <div class="sw-pagehero-content">
+
+                <div class="sw-pagehero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span aria-current="page">Delivery & Installation</span>
+                </div>
+
+                <h1 class="sw-pagehero-title">
+                    From Delivery to Setup, <br> Made Clear.
+                </h1>
+
+                <p class="sw-pagehero-description">
+                    Get your site ready, understand your requirements, and plan your shed installation. We’ll help you
+                    understand the steps before your shed arrives.
+                </p>
+
+                <div class="sw-pagehero-bottom">
+                    <span class="sw-pagehero-bottom-line"></span>
+                    <span class="sw-pagehero-bottom-text">
+                        YOUR SPACE. YOUR POSSIBILITIES.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END COMMON PAGE HERO =============== -->
+
+
+    <!-- SECTION 2: DELIVERY & INSTALLATION SITE PREPARATION -->
+    <section class="sw-siteprep-section" id="sw-site-preparation">
+        <div class="sw-siteprep-container">
+
+            <div class="sw-siteprep-heading">
+                <span class="sw-siteprep-eyebrow">BEFORE YOUR SHED ARRIVES</span>
+                <h2>A Little Preparation Goes <span>A Long Way.</span></h2>
+                <p>
+                    Get your space ready before delivery day. Use this checklist
+                    to review the key things to discuss and prepare for your shed.
+                </p>
+            </div>
+
+            <div class="sw-siteprep-layout">
+
+                <!-- LEFT: PREPARATION CHECKLIST -->
+                <div class="sw-siteprep-checklist">
+
+                    <div class="sw-siteprep-checklist-header">
+                        <div>
+                            <span class="sw-siteprep-overline">YOUR SITE CHECKLIST</span>
+                            <h3>Ready for delivery?</h3>
+                        </div>
+                        <span class="sw-siteprep-count" id="swSitePrepCount">0 / 5</span>
+                    </div>
+
+                    <div class="sw-siteprep-progress-track" role="progressbar"
+                        aria-label="Site preparation checklist progress" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="0" id="swSitePrepProgress">
+                        <span id="swSitePrepProgressFill"></span>
+                    </div>
+
+                    <p class="sw-siteprep-progress-label" id="swSitePrepProgressLabel">
+                        Start by checking each preparation step.
+                    </p>
+
+                    <div class="sw-siteprep-check-items">
+
+                        <label class="sw-siteprep-check-item">
+                            <input type="checkbox" value="ground">
+                            <span class="sw-siteprep-checkbox" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="sw-siteprep-check-copy">
+                                <strong>1. Check the ground</strong>
+                                <small>
+                                    Confirm that the planned area can accommodate a suitable,
+                                    stable base for your shed.
+                                </small>
+                            </span>
+                        </label>
+
+                        <label class="sw-siteprep-check-item">
+                            <input type="checkbox" value="measurements">
+                            <span class="sw-siteprep-checkbox" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="sw-siteprep-check-copy">
+                                <strong>2. Measure your space</strong>
+                                <small>
+                                    Check the shed footprint and leave the clearance required
+                                    for access, doors and installation.
+                                </small>
+                            </span>
+                        </label>
+
+                        <label class="sw-siteprep-check-item">
+                            <input type="checkbox" value="access">
+                            <span class="sw-siteprep-checkbox" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="sw-siteprep-check-copy">
+                                <strong>3. Review delivery access</strong>
+                                <small>
+                                    Check gates, pathways, turns, overhead obstructions
+                                    and the route to the installation area.
+                                </small>
+                            </span>
+                        </label>
+
+                        <label class="sw-siteprep-check-item">
+                            <input type="checkbox" value="drainage">
+                            <span class="sw-siteprep-checkbox" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="sw-siteprep-check-copy">
+                                <strong>4. Consider drainage</strong>
+                                <small>
+                                    Look for areas where water collects and confirm
+                                    appropriate drainage around the proposed location.
+                                </small>
+                            </span>
+                        </label>
+
+                        <label class="sw-siteprep-check-item">
+                            <input type="checkbox" value="confirm">
+                            <span class="sw-siteprep-checkbox" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="sw-siteprep-check-copy">
+                                <strong>5. Confirm requirements</strong>
+                                <small>
+                                    Ask about the required foundation, site access,
+                                    permits and installation arrangements for your model.
+                                </small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div class="sw-siteprep-checklist-footer">
+                        <span class="sw-siteprep-footer-icon">
+                            <i class="fa-regular fa-clipboard" aria-hidden="true"></i>
+                        </span>
+                        <p id="swSitePrepStatus" aria-live="polite">
+                            Your checklist progress will appear here as you complete tasks.
+                        </p>
+                        <button type="button" class="sw-siteprep-reset" id="swSitePrepReset">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT: SITE PREPARATION GUIDE -->
+                <aside class="sw-siteprep-guide">
+
+                    <div class="sw-siteprep-guide-image">
+                        <img src="images/base-area.jpg" alt="Prepared level base area for an outdoor storage shed"
+                            loading="lazy">
+                        <span class="sw-siteprep-image-label">
+                            START WITH THE RIGHT SPACE
+                        </span>
+                    </div>
+
+                    <div class="sw-siteprep-guide-content">
+                        <span class="sw-siteprep-guide-eyebrow">GOOD TO KNOW</span>
+                        <h3>Plan the site before booking installation.</h3>
+
+                        <p>
+                            Every shed and property is different. Confirm the exact
+                            site requirements with your supplier before preparing
+                            the ground or arranging delivery.
+                        </p>
+
+                        <div class="sw-siteprep-guide-points">
+                            <div class="sw-siteprep-guide-point">
+                                <span><i class="fa-solid fa-ruler" aria-hidden="true"></i></span>
+                                <p>
+                                    <strong>Check the dimensions</strong>
+                                    <small>Include access and working clearance.</small>
+                                </p>
+                            </div>
+
+                            <div class="sw-siteprep-guide-point">
+                                <span><i class="fa-solid fa-truck" aria-hidden="true"></i></span>
+                                <p>
+                                    <strong>Confirm the access route</strong>
+                                    <small>Share any narrow or restricted areas.</small>
+                                </p>
+                            </div>
+
+                            <div class="sw-siteprep-guide-point">
+                                <span><i class="fa-solid fa-house" aria-hidden="true"></i></span>
+                                <p>
+                                    <strong>Verify local requirements</strong>
+                                    <small>Check permissions and base specifications.</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="sw-siteprep-contact-link">
+                            Ask About Site Requirements
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </aside>
+            </div>
+
+            <div class="sw-siteprep-bottom-note">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                <p>
+                    <strong>Please note:</strong> This checklist is a planning aid,
+                    not a site approval. Follow your shed manufacturer's specifications
+                    and applicable local building requirements.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: DELIVERY DAY GUIDE -->
+    <section class="sw-deliveryday-section" id="sw-delivery-day">
+        <div class="sw-deliveryday-container">
+
+            <div class="sw-deliveryday-heading">
+                <span class="sw-deliveryday-eyebrow">DELIVERY DAY, EXPLAINED</span>
+                <h2>Know What to Expect <span>When Your Shed Arrives.</span></h2>
+                <p>
+                    A little coordination can make delivery day easier.
+                    Review these key steps and confirm the arrangements for your order
+                    before your scheduled delivery.
+                </p>
+            </div>
+
+            <div class="sw-deliveryday-layout">
+
+                <!-- LEFT: DELIVERY TIMELINE -->
+                <div class="sw-deliveryday-timeline">
+
+                    <div class="sw-deliveryday-timeline-header">
+                        <span class="sw-deliveryday-small-label">YOUR DELIVERY CHECKLIST</span>
+                        <h3>Before, during and after arrival</h3>
+                    </div>
+
+                    <div class="sw-deliveryday-step">
+                        <div class="sw-deliveryday-step-marker">
+                            <span>01</span>
+                        </div>
+                        <div class="sw-deliveryday-step-content">
+                            <span class="sw-deliveryday-step-label">BEFORE ARRIVAL</span>
+                            <h4>Confirm the delivery details</h4>
+                            <p>
+                                Verify the delivery date, address, contact number,
+                                expected arrival window and any access instructions.
+                            </p>
+                            <div class="sw-deliveryday-step-tag">
+                                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                                Schedule confirmation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryday-step">
+                        <div class="sw-deliveryday-step-marker">
+                            <span>02</span>
+                        </div>
+                        <div class="sw-deliveryday-step-content">
+                            <span class="sw-deliveryday-step-label">ON ARRIVAL</span>
+                            <h4>Keep the access route clear</h4>
+                            <p>
+                                Make sure the agreed unloading area and access route
+                                are clear. Tell the delivery team about narrow gates,
+                                slopes or overhead obstructions.
+                            </p>
+                            <div class="sw-deliveryday-step-tag">
+                                <i class="fa-solid fa-truck" aria-hidden="true"></i>
+                                Access and unloading
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryday-step">
+                        <div class="sw-deliveryday-step-marker">
+                            <span>03</span>
+                        </div>
+                        <div class="sw-deliveryday-step-content">
+                            <span class="sw-deliveryday-step-label">AFTER DELIVERY</span>
+                            <h4>Review the delivered items</h4>
+                            <p>
+                                Check the delivery against the order or packing list
+                                where available. Report visible damage or missing items
+                                promptly through the supplier's process.
+                            </p>
+                            <div class="sw-deliveryday-step-tag">
+                                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                                Delivery check
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryday-timeline-note">
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                        <p>
+                            Delivery arrangements vary by shed model, location and order.
+                            Confirm unloading and placement responsibilities in advance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: DELIVERY VISUAL AND REMINDERS -->
+                <aside class="sw-deliveryday-side">
+
+                    <div class="sw-deliveryday-image">
+                        <img src="images/delivery-day.jpg"
+                            alt="Delivery vehicle arriving at a residential property for shed delivery" loading="lazy">
+
+                        <div class="sw-deliveryday-image-overlay"></div>
+
+                        <div class="sw-deliveryday-image-caption">
+                            <span>DELIVERY MADE CLEAR</span>
+                            <h3>Be ready for the big arrival.</h3>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryday-reminders">
+                        <div class="sw-deliveryday-reminders-heading">
+                            <span class="sw-deliveryday-reminders-icon">
+                                <i class="fa-regular fa-clipboard" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <span class="sw-deliveryday-small-label">QUICK REMINDERS</span>
+                                <h3>Before the truck arrives</h3>
+                            </div>
+                        </div>
+
+                        <ul class="sw-deliveryday-reminder-list">
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                <span>Keep your phone available for delivery updates.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                <span>Move vehicles and other obstacles from the agreed route.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                <span>Confirm who will receive the delivery.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                <span>Know whether installation is included or separately scheduled.</span>
+                            </li>
+                        </ul>
+
+                        <a href="contact.html" class="sw-deliveryday-contact">
+                            Confirm Your Delivery Details
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </aside>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: INSTALLATION PROCESS -->
+    <section class="sw-installflow-section" id="sw-installation-process">
+        <div class="sw-installflow-container">
+
+            <div class="sw-installflow-top">
+                <div class="sw-installflow-heading">
+                    <span class="sw-installflow-eyebrow">THE INSTALLATION JOURNEY</span>
+                    <h2>From Prepared Ground to <span>Finished Shed.</span></h2>
+                </div>
+
+                <p class="sw-installflow-intro">
+                    Understand the main stages of shed installation, from checking
+                    the site to reviewing the finished structure. The exact process
+                    depends on your shed model and the service arranged.
+                </p>
+            </div>
+
+            <div class="sw-installflow-feature">
+
+                <!-- LARGE IMAGE -->
+                <div class="sw-installflow-visual">
+                    <img src="images/shed-installation-process.jpg"
+                        alt="Outdoor storage shed being assembled on a prepared base" loading="lazy">
+
+                    <div class="sw-installflow-visual-shade"></div>
+
+                    <div class="sw-installflow-photo-label">
+                        <span class="sw-installflow-live-dot"></span>
+                        INSTALLATION OVERVIEW
+                    </div>
+
+                    <div class="sw-installflow-photo-caption">
+                        <span>GOOD INSTALLATION STARTS WITH GOOD PREPARATION</span>
+                        <h3>Built around your space and requirements.</h3>
+                    </div>
+                </div>
+
+                <!-- PROCESS MAP -->
+                <div class="sw-installflow-process">
+                    <div class="sw-installflow-process-heading">
+                        <span>THE KEY STAGES</span>
+                        <span class="sw-installflow-stage-count">04 STEPS</span>
+                    </div>
+
+                    <div class="sw-installflow-stage">
+                        <span class="sw-installflow-stage-number">01</span>
+                        <div class="sw-installflow-stage-copy">
+                            <h3>Site & Base Review</h3>
+                            <p>
+                                Check the prepared area, dimensions, level and foundation
+                                requirements before work begins.
+                            </p>
+                            <span class="sw-installflow-stage-tag">PREPARATION</span>
+                        </div>
+                    </div>
+
+                    <div class="sw-installflow-stage">
+                        <span class="sw-installflow-stage-number">02</span>
+                        <div class="sw-installflow-stage-copy">
+                            <h3>Positioning & Assembly</h3>
+                            <p>
+                                Place or assemble the shed according to the manufacturer's
+                                instructions and the agreed service scope.
+                            </p>
+                            <span class="sw-installflow-stage-tag">MAIN INSTALLATION</span>
+                        </div>
+                    </div>
+
+                    <div class="sw-installflow-stage">
+                        <span class="sw-installflow-stage-number">03</span>
+                        <div class="sw-installflow-stage-copy">
+                            <h3>Fit & Finish Checks</h3>
+                            <p>
+                                Review doors, fasteners, alignment and included features
+                                according to the product specifications.
+                            </p>
+                            <span class="sw-installflow-stage-tag">QUALITY REVIEW</span>
+                        </div>
+                    </div>
+
+                    <div class="sw-installflow-stage">
+                        <span class="sw-installflow-stage-number">04</span>
+                        <div class="sw-installflow-stage-copy">
+                            <h3>Customer Handover</h3>
+                            <p>
+                                Review the completed work, care instructions and any
+                                outstanding items with the installation team.
+                            </p>
+                            <span class="sw-installflow-stage-tag">FINAL REVIEW</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- HANDOVER PANEL -->
+            <div class="sw-installflow-handover">
+
+                <div class="sw-installflow-handover-intro">
+                    <span class="sw-installflow-handover-icon">
+                        <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                    </span>
+
+                    <div>
+                        <span class="sw-installflow-eyebrow">BEFORE YOU SIGN OFF</span>
+                        <h3>Your final installation review</h3>
+                        <p>
+                            Use these prompts when reviewing the completed installation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sw-installflow-review-grid">
+                    <div class="sw-installflow-review-item">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Doors and access points operate as expected.</span>
+                    </div>
+
+                    <div class="sw-installflow-review-item">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>The installed structure matches the agreed specifications.</span>
+                    </div>
+
+                    <div class="sw-installflow-review-item">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Included fittings and features have been reviewed.</span>
+                    </div>
+
+                    <div class="sw-installflow-review-item">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Care instructions and any outstanding issues are clarified.</span>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="sw-installflow-contact">
+                    Ask About Installation
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <p class="sw-installflow-disclaimer">
+                <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                <span>
+                    Installation, anchoring, foundation work and final checks depend
+                    on the product model and contracted service. Confirm the scope
+                    with your supplier before installation day.
+                </span>
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 5: DELIVERY & INSTALLATION PLANNER -->
+    <section class="sw-deliveryplanner-section" id="delivery-planner">
+        <div class="sw-deliveryplanner-container">
+
+            <div class="sw-deliveryplanner-heading">
+                <span class="sw-deliveryplanner-eyebrow">YOUR DELIVERY, YOUR PLAN</span>
+                <h2>Let's Get Your Shed <span>Ready for Arrival.</span></h2>
+                <p>
+                    Use this simple planner to review your site, delivery access
+                    and installation arrangements before contacting our team.
+                </p>
+            </div>
+
+            <div class="sw-deliveryplanner-workspace">
+
+                <!-- LEFT: PLANNER FORM -->
+                <div class="sw-deliveryplanner-form-panel">
+                    <div class="sw-deliveryplanner-form-heading">
+                        <div>
+                            <span class="sw-deliveryplanner-step-label">YOUR PLANNING DETAILS</span>
+                            <h3>Build your delivery plan</h3>
+                        </div>
+                        <span class="sw-deliveryplanner-form-icon">
+                            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <form id="swDeliveryPlannerForm">
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerShed">What type of shed are you planning for?</label>
+                            <select id="swPlannerShed" name="shedType" required>
+                                <option value="">Select shed type</option>
+                                <option value="Garden storage shed">Garden storage shed</option>
+                                <option value="Workshop shed">Workshop shed</option>
+                                <option value="Large storage building">Large storage building</option>
+                                <option value="Other shed model">Other shed model</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerDate">Preferred delivery date</label>
+                            <input id="swPlannerDate" name="deliveryDate" type="date">
+                            <small>Preference only — your date must be confirmed by the supplier.</small>
+                        </div>
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerAccess">How accessible is your site?</label>
+                            <select id="swPlannerAccess" name="siteAccess" required>
+                                <option value="">Choose access conditions</option>
+                                <option value="Clear access">Clear driveway or access route</option>
+                                <option value="Narrow access">Narrow gate or pathway</option>
+                                <option value="Restricted access">Restricted vehicle access</option>
+                                <option value="Needs assessment">Not sure — needs assessment</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerBase">Is your shed base ready?</label>
+                            <select id="swPlannerBase" name="baseReadiness" required>
+                                <option value="">Select site readiness</option>
+                                <option value="Ready">Yes, base is ready</option>
+                                <option value="In progress">Preparation is in progress</option>
+                                <option value="Not started">Not started yet</option>
+                                <option value="Need guidance">I need guidance</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerInstall">Installation arrangement</label>
+                            <select id="swPlannerInstall" name="installation" required>
+                                <option value="">Choose an arrangement</option>
+                                <option value="Professional installation requested">Professional installation requested
+                                </option>
+                                <option value="Self-assembly planned">Self-assembly planned</option>
+                                <option value="Need installation information">I need more information</option>
+                                <option value="Not decided">Not decided yet</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-deliveryplanner-field">
+                            <label for="swPlannerNotes">Additional details <span>(optional)</span></label>
+                            <textarea id="swPlannerNotes" name="notes" rows="3"
+                                placeholder="E.g. narrow gate, steps, sloping ground..."></textarea>
+                        </div>
+
+                        <button type="submit" class="sw-deliveryplanner-submit">
+                            Generate My Plan
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+
+                        <p class="sw-deliveryplanner-form-note">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            Your plan is prepared in this page. It does not book a delivery.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- RIGHT: LIVE PLAN SUMMARY -->
+                <aside class="sw-deliveryplanner-summary">
+
+                    <div class="sw-deliveryplanner-summary-top">
+                        <span class="sw-deliveryplanner-summary-eyebrow">YOUR PLANNING OVERVIEW</span>
+                        <span class="sw-deliveryplanner-summary-symbol">
+                            <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                        </span>
+                        <h3>One step closer to a ready site.</h3>
+                        <p>
+                            Complete the details to build a summary of the arrangements
+                            you need to review.
+                        </p>
+                    </div>
+
+                    <div class="sw-deliveryplanner-completion">
+                        <div class="sw-deliveryplanner-completion-heading">
+                            <span>Planning details</span>
+                            <strong id="swPlannerPercent">0%</strong>
+                        </div>
+
+                        <div class="sw-deliveryplanner-progress" id="swPlannerProgress" role="progressbar"
+                            aria-label="Planner completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                            <span id="swPlannerProgressFill"></span>
+                        </div>
+
+                        <p id="swPlannerProgressText">Fill in the required fields to get started.</p>
+                    </div>
+
+                    <div class="sw-deliveryplanner-summary-details">
+                        <div class="sw-deliveryplanner-summary-row">
+                            <span class="sw-deliveryplanner-summary-icon">
+                                <i class="fa-solid fa-house" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <small>Shed type</small>
+                                <strong id="swPlannerSummaryShed">Not selected</strong>
+                            </div>
+                        </div>
+
+                        <div class="sw-deliveryplanner-summary-row">
+                            <span class="sw-deliveryplanner-summary-icon">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <small>Preferred delivery</small>
+                                <strong id="swPlannerSummaryDate">Not selected</strong>
+                            </div>
+                        </div>
+
+                        <div class="sw-deliveryplanner-summary-row">
+                            <span class="sw-deliveryplanner-summary-icon">
+                                <i class="fa-solid fa-road" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <small>Site access</small>
+                                <strong id="swPlannerSummaryAccess">Not assessed</strong>
+                            </div>
+                        </div>
+
+                        <div class="sw-deliveryplanner-summary-row">
+                            <span class="sw-deliveryplanner-summary-icon">
+                                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                            </span>
+                            <div>
+                                <small>Installation</small>
+                                <strong id="swPlannerSummaryInstall">Not decided</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryplanner-nextstep" id="swPlannerNextStep" aria-live="polite">
+                        <span class="sw-deliveryplanner-nextstep-icon">
+                            <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Your next step</strong>
+                            <p>Start with your shed type and site preparation details.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-deliveryplanner-summary-actions">
+                        <button type="button" class="sw-deliveryplanner-copy" id="swPlannerCopy" disabled>
+                            <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                            Copy Plan Summary
+                        </button>
+
+                        <a href="contact.html" class="sw-deliveryplanner-contact">
+                            Discuss Your Plan
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <p class="sw-deliveryplanner-disclaimer">
+                        This planner is for preparation only. Delivery dates, access,
+                        site suitability and installation services require confirmation.
+                    </p>
+
+                </aside>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 6: DELIVERY FAQ + FINAL CTA -->
+    <section class="sw-deliveryfaq-section" id="delivery-faq">
+        <div class="sw-deliveryfaq-container">
+
+            <div class="sw-deliveryfaq-top">
+                <div class="sw-deliveryfaq-heading">
+                    <span class="sw-deliveryfaq-eyebrow">NEED A FEW ANSWERS?</span>
+                    <h2>Good to Know <span>Before Delivery Day.</span></h2>
+                </div>
+
+                <p>
+                    Find answers to common delivery and installation questions.
+                    If your property or shed has specific requirements, our team
+                    can help you understand what to confirm.
+                </p>
+            </div>
+
+            <div class="sw-deliveryfaq-layout">
+
+                <!-- FAQ ACCORDION -->
+                <div class="sw-deliveryfaq-list">
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">01</span>
+                            <span class="sw-deliveryfaq-question">
+                                How should I prepare my site before delivery?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                Check your available space, foundation requirements,
+                                drainage and delivery access. Follow the specifications
+                                for your selected shed model and confirm any preparation
+                                requirements with your supplier.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">02</span>
+                            <span class="sw-deliveryfaq-question">
+                                How much does shed delivery cost?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                Delivery charges can depend on your location, shed size,
+                                access conditions and the supplier's delivery terms.
+                                Request a quote that clearly explains the applicable charges.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">03</span>
+                            <span class="sw-deliveryfaq-question">
+                                Is professional installation included?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                Installation availability and pricing depend on the
+                                selected product and service package. Confirm whether
+                                assembly, anchoring, foundation preparation and finishing
+                                are included in your quote.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">04</span>
+                            <span class="sw-deliveryfaq-question">
+                                What if my property has narrow access?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                Measure gates, pathways and tight turns, and mention any
+                                slopes or overhead obstructions before booking. The supplier
+                                can advise whether the planned delivery method is suitable.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">05</span>
+                            <span class="sw-deliveryfaq-question">
+                                Can I choose my preferred delivery date?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                You can ask about your preferred date, but availability
+                                depends on the supplier's schedule and delivery area.
+                                Wait for confirmation before making other arrangements.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-deliveryfaq-item">
+                        <summary>
+                            <span class="sw-deliveryfaq-number">06</span>
+                            <span class="sw-deliveryfaq-question">
+                                Do I need permission to install a shed?
+                            </span>
+                            <span class="sw-deliveryfaq-toggle" aria-hidden="true">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+                        <div class="sw-deliveryfaq-answer">
+                            <p>
+                                Requirements vary by location, shed dimensions, intended use
+                                and property rules. Check the applicable local regulations
+                                and any property or community restrictions before installation.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+
+                <!-- SIDE CONTACT PANEL -->
+                <aside class="sw-deliveryfaq-help">
+
+                    <div class="sw-deliveryfaq-help-top">
+                        <span class="sw-deliveryfaq-help-icon">
+                            <i class="fa-regular fa-comments" aria-hidden="true"></i>
+                        </span>
+                        <span class="sw-deliveryfaq-help-label">WE'RE HERE TO HELP</span>
+                    </div>
+
+                    <h3>Every property is a little different.</h3>
+
+                    <p>
+                        Need clarity on delivery access, site preparation or
+                        installation options? Tell us about your project so you
+                        can understand the next steps.
+                    </p>
+
+                    <div class="sw-deliveryfaq-help-divider"></div>
+
+                    <div class="sw-deliveryfaq-help-point">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Discuss your site requirements</span>
+                    </div>
+
+                    <div class="sw-deliveryfaq-help-point">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Clarify delivery and installation scope</span>
+                    </div>
+
+                    <div class="sw-deliveryfaq-help-point">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                        <span>Understand the arrangements to confirm</span>
+                    </div>
+
+                    <a href="contact.html" class="sw-deliveryfaq-contact">
+                        Talk to Our Team
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <span class="sw-deliveryfaq-help-footnote">
+                        Have your shed model and delivery location ready, if available.
+                    </span>
+
+                </aside>
+
+            </div>
+
+            <!-- CLOSING CTA -->
+            <div class="sw-deliveryfaq-bottom">
+                <div class="sw-deliveryfaq-bottom-mark" aria-hidden="true">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div class="sw-deliveryfaq-bottom-content">
+                    <span>READY FOR THE NEXT STEP?</span>
+                    <h3>Let's get your shed journey moving.</h3>
+                    <p>
+                        Discuss your delivery needs and installation requirements
+                        before you make your final arrangements.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="sw-deliveryfaq-bottom-button">
+                    Plan With Our Team
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= SHEDWORKS FOOTER ================= -->
+    <footer class="sw-footer">
+
+        <!-- Main Footer -->
+        <div class="sw-footer-main">
+            <div class="sw-footer-container">
+
+                <!-- Brand Column -->
+                <div class="sw-footer-brand">
+                    <a href="index.html" class="sw-footer-logo">
+                        <img src="images/logo-light.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+                    </a>
+
+                    <p class="sw-footer-description">
+                        Practical outdoor spaces, built around your needs.
+                        Discover durable storage sheds and customizable
+                        outdoor buildings designed to last.
+                    </p>
+
+                    <div class="sw-footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sw-footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="sw-footer-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Storage Sheds</a></li>
+                        <li><a href="products.html">Garden Sheds</a></li>
+                        <li><a href="products.html">Metal Buildings</a></li>
+                        <li><a href="products.html">Wooden Buildings</a></li>
+                        <li><a href="customization.html">Custom Buildings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="sw-footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="customization.html">Customization</a></li>
+                        <li><a href="delivery-installation.html">Delivery</a></li>
+                        <li><a href="delivery-installation.html">Installation</a></li>
+                        <li><a href="contact.html">Request an Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sw-footer-newsletter">
+                    <h3>Stay in the Loop</h3>
+
+                    <p>
+                        Get helpful ideas and updates for your
+                        outdoor space.
+                    </p>
+
+                    <form class="sw-newsletter-form" id="swNewsletterForm">
+                        <label class="sw-sr-only" for="swNewsletterEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="swNewsletterEmail" name="email" placeholder="Enter your email" required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="sw-newsletter-note" id="swNewsletterMessage" aria-live="polite">
+                        Join us for practical outdoor inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="sw-footer-bottom">
+            <div class="sw-footer-bottom-inner">
+
+                <p>
+                    &copy; <span id="swCopyrightYear"></span>
+                    ShedWorks. All rights reserved.
+                </p>
+
+                <div class="sw-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============== END SHEDWORKS FOOTER =============== -->
+
+
+    <!-- Scroll To Top Button -->
+    <button class="sw-scroll-top" id="swScrollTop" type="button" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

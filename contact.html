@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="sw-header" id="siteHeader">
+        <div class="sw-header-inner">
+
+            <!-- Logo: Left Edge -->
+            <a href="index.html" class="sw-logo" aria-label="ShedWorks Home">
+                <img src="images/logo.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+            </a>
+
+            <!-- Desktop Navigation: Center -->
+            <nav class="sw-desktop-nav" aria-label="Main navigation">
+                <div class="sw-nav-item sw-home-item">
+                    <button class="sw-nav-link sw-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-home-dropdown" id="swHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="sw-nav-link">About</a>
+                <a href="products.html" class="sw-nav-link">Products</a>
+                <a href="customization.html" class="sw-nav-link">Customization</a>
+                <a href="delivery-installation.html" class="sw-nav-link">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html" class="sw-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions: Right Edge -->
+            <div class="sw-desktop-actions">
+
+                <button class="sw-icon-btn sw-theme-toggle" type="button" aria-label="Enable dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="sw-icon-btn sw-rtl-toggle" type="button" aria-label="Switch to RTL layout"
+                    aria-pressed="false" title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="sw-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="sw-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="swMobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation Panel -->
+        <div class="sw-mobile-menu" id="swMobileMenu" aria-hidden="true">
+
+            <nav class="sw-mobile-nav" aria-label="Mobile navigation">
+
+                <div class="sw-mobile-home">
+                    <button class="sw-mobile-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swMobileHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-mobile-home-dropdown" id="swMobileHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="customization.html">Customization</a>
+                <a href="delivery-installation.html">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <!-- Toggles and Login Inside Responsive Menu -->
+            <div class="sw-mobile-actions">
+
+                <button class="sw-mobile-action sw-theme-toggle" type="button" aria-label="Enable dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="sw-mobile-action sw-rtl-toggle" type="button" aria-pressed="false"
+                    aria-label="Switch to RTL layout">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL</span>
+                </button>
+
+                <a href="login.html" class="sw-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- =============== END HEADER =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — COMMON INNER PAGE HERO
+========================================= -->
+    <section class="sw-pagehero contact-banner" id="pageHero">
+
+        <div class="sw-pagehero-overlay"></div>
+
+        <div class="sw-pagehero-container">
+
+            <div class="sw-pagehero-content">
+
+                <div class="sw-pagehero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span aria-current="page">Contact</span>
+                </div>
+
+                <h1 class="sw-pagehero-title">
+                    Contact Us
+                </h1>
+
+                <p class="sw-pagehero-description">
+                    Have questions about your next outdoor building?
+                    We’re here to help you find the right solution
+                    for your space and needs.
+                </p>
+
+                <div class="sw-pagehero-bottom">
+                    <span class="sw-pagehero-bottom-line"></span>
+                    <span class="sw-pagehero-bottom-text">
+                        YOUR SPACE. YOUR POSSIBILITIES.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END COMMON PAGE HERO =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — CONTACT INFORMATION CARDS
+========================================= -->
+    <section class="sw-contact-info-section" id="contactInformation">
+
+        <div class="sw-contact-info-container">
+
+            <div class="sw-contact-info-heading">
+                <span class="sw-contact-info-eyebrow">WE'RE HERE TO HELP</span>
+
+                <h2 class="sw-contact-info-title">
+                    Let's Start a Conversation
+                </h2>
+
+                <p class="sw-contact-info-description">
+                    Have a question about our buildings or need help
+                    planning your project? Reach out using the details below.
+                </p>
+            </div>
+
+            <div class="sw-contact-info-grid">
+
+                <!-- Phone Card -->
+                <article class="sw-contact-info-card">
+                    <div class="sw-contact-info-card-top">
+                        <span class="sw-contact-info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="sw-contact-info-number">01</span>
+                    </div>
+
+                    <h3>Give Us a Call</h3>
+
+                    <p>
+                        Speak with our team about your outdoor building needs.
+                    </p>
+
+                    <a href="tel:+10000000000" class="sw-contact-info-link">
+                        Call Our Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- Email Card -->
+                <article class="sw-contact-info-card">
+                    <div class="sw-contact-info-card-top">
+                        <span class="sw-contact-info-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+                        <span class="sw-contact-info-number">02</span>
+                    </div>
+
+                    <h3>Send an Email</h3>
+
+                    <p>
+                        Share your questions, ideas or project requirements with us.
+                    </p>
+
+                    <a href="mailto:info@shedworks.com" class="sw-contact-info-link">
+                        Email Our Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- Office Hours Card -->
+                <article class="sw-contact-info-card">
+                    <div class="sw-contact-info-card-top">
+                        <span class="sw-contact-info-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+                        <span class="sw-contact-info-number">03</span>
+                    </div>
+
+                    <h3>Office Hours</h3>
+
+                    <p>
+                        Get in touch during our business hours for assistance
+                        with your project.
+                    </p>
+
+                    <div class="sw-contact-info-detail">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Monday – Friday</span>
+                    </div>
+                </article>
+
+                <!-- Location Card -->
+                <article class="sw-contact-info-card">
+                    <div class="sw-contact-info-card-top">
+                        <span class="sw-contact-info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span class="sw-contact-info-number">04</span>
+                    </div>
+
+                    <h3>Our Location</h3>
+
+                    <p>
+                        Contact our team to learn about our service area
+                        and available building options.
+                    </p>
+
+                    <a href="contact.html#contactForm" class="sw-contact-info-link">
+                        Get in Touch
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END CONTACT INFORMATION =============== -->
+
+
+
+    <!-- =========================================
+     SHEDWORKS — CONTACT ENQUIRY FORM
+========================================= -->
+    <section class="sw-enquiry-section" id="contactForm">
+
+        <div class="sw-enquiry-container">
+
+            <!-- LEFT: CONTACT INTRO -->
+            <div class="sw-enquiry-intro">
+
+                <span class="sw-enquiry-eyebrow">
+                    LET'S TALK ABOUT YOUR PROJECT
+                </span>
+
+                <h2 class="sw-enquiry-heading">
+                    Tell Us What You Have in Mind.
+                </h2>
+
+                <p class="sw-enquiry-description">
+                    Whether you're looking for extra storage, a garden shed
+                    or a custom outdoor building, share a few details with us.
+                    Our team can help you explore the available options.
+                </p>
+
+                <div class="sw-enquiry-points">
+
+                    <div class="sw-enquiry-point">
+                        <span class="sw-enquiry-point-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+
+                        <div>
+                            <h3>Find the Right Building</h3>
+                            <p>Explore options for your space and purpose.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-enquiry-point">
+                        <span class="sw-enquiry-point-icon">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                        </span>
+
+                        <div>
+                            <h3>Discuss Your Requirements</h3>
+                            <p>Tell us about your preferred size and features.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-enquiry-point">
+                        <span class="sw-enquiry-point-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </span>
+
+                        <div>
+                            <h3>Get Project Guidance</h3>
+                            <p>Ask questions before planning your next step.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sw-enquiry-note">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <p>
+                        Not sure what you need yet? That's okay.
+                        Tell us a little about your plans and we'll help
+                        you explore the possibilities.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div class="sw-enquiry-form-panel">
+
+                <div class="sw-enquiry-form-heading">
+                    <span>YOUR PROJECT STARTS HERE</span>
+                    <h3>Send an Enquiry</h3>
+                    <p>Fill in the details below and tell us how we can help.</p>
+                </div>
+
+                <form class="sw-enquiry-form" id="swEnquiryForm">
+
+                    <div class="sw-enquiry-fields">
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquiryName">
+                                Full Name <span>*</span>
+                            </label>
+                            <input type="text" id="swEnquiryName" name="name" placeholder="Enter your full name"
+                                autocomplete="name" required>
+                        </div>
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquiryEmail">
+                                Email Address <span>*</span>
+                            </label>
+                            <input type="email" id="swEnquiryEmail" name="email" placeholder="you@example.com"
+                                autocomplete="email" required>
+                        </div>
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquiryPhone">
+                                Phone Number
+                            </label>
+                            <input type="tel" id="swEnquiryPhone" name="phone" placeholder="Enter your phone number"
+                                autocomplete="tel">
+                        </div>
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquiryType">
+                                Building Type <span>*</span>
+                            </label>
+                            <select id="swEnquiryType" name="buildingType" required>
+                                <option value="" disabled selected>
+                                    Select building type
+                                </option>
+                                <option value="storage-shed">Storage Shed</option>
+                                <option value="garden-shed">Garden Shed</option>
+                                <option value="garage">Garage</option>
+                                <option value="utility-building">Utility Building</option>
+                                <option value="custom-building">Custom Building</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquirySize">
+                                Preferred Size
+                            </label>
+                            <input type="text" id="swEnquirySize" name="preferredSize" placeholder="e.g. 10 × 12 ft">
+                        </div>
+
+                        <div class="sw-enquiry-field">
+                            <label for="swEnquiryLocation">
+                                Project Location
+                            </label>
+                            <input type="text" id="swEnquiryLocation" name="location"
+                                placeholder="City or ZIP / postal code">
+                        </div>
+
+                        <div class="sw-enquiry-field sw-enquiry-field-full">
+                            <label for="swEnquiryMessage">
+                                Tell Us About Your Project <span>*</span>
+                            </label>
+                            <textarea id="swEnquiryMessage" name="message" rows="5"
+                                placeholder="Describe your requirements, intended use or any questions..."
+                                required></textarea>
+                        </div>
+
+                    </div>
+
+                    <label class="sw-enquiry-consent">
+                        <input type="checkbox" name="contactConsent" required>
+                        <span>
+                            I agree to be contacted regarding this enquiry.
+                        </span>
+                    </label>
+
+                    <button type="submit" class="sw-enquiry-submit">
+                        Submit Enquiry
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <p class="sw-enquiry-form-note">
+                        <i class="fa-solid fa-lock"></i>
+                        Your information is provided for enquiry purposes.
+                    </p>
+
+                    <p class="sw-enquiry-status" id="swEnquiryStatus" role="status" aria-live="polite" hidden></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END ENQUIRY FORM =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — LOCATION & MAP SECTION
+========================================= -->
+    <section class="sw-location-section" id="ourLocation">
+
+        <div class="sw-location-container">
+
+            <!-- Section Heading -->
+            <div class="sw-location-heading">
+                <span class="sw-location-eyebrow">COME FIND US</span>
+
+                <h2 class="sw-location-title">
+                    Let's Find the Right Space for You.
+                </h2>
+
+                <p class="sw-location-description">
+                    Have questions about your next outdoor building?
+                    Connect with our team to discuss your project and
+                    learn about service availability in your area.
+                </p>
+            </div>
+
+            <!-- Location Content -->
+            <div class="sw-location-layout">
+
+                <!-- Left: Location Details -->
+                <div class="sw-location-details">
+
+                    <div class="sw-location-label">
+                        <span class="sw-location-label-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <span>SHEDWORKS LOCATION</span>
+                    </div>
+
+                    <h3>Visit or Connect With Our Team</h3>
+
+                    <p class="sw-location-text">
+                        Planning a storage shed, garage or custom outdoor
+                        building? Get in touch with our team to discuss your
+                        requirements and available service areas.
+                    </p>
+
+                    <div class="sw-location-detail-item">
+                        <span class="sw-location-detail-icon">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </span>
+
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>Replace with your business address</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-location-detail-item">
+                        <span class="sw-location-detail-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:info@shedworks.com">
+                                info@shedworks.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sw-location-detail-item">
+                        <span class="sw-location-detail-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Contact us for current opening hours</p>
+                        </div>
+                    </div>
+
+                    <a href="#contactForm" class="sw-location-button">
+                        Send an Enquiry
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <!-- Right: Google Map -->
+                <div class="sw-location-map-wrap">
+
+                    <div class="sw-location-map-heading">
+                        <div>
+                            <span>FIND OUR LOCATION</span>
+                            <h3>Explore the Map</h3>
+                        </div>
+
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+
+                    <div class="sw-location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497518.73679295304!2d79.90422142825105!3d13.044255565330664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1792426488075!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+
+                    <p class="sw-location-map-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Update the map with your actual business address.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END LOCATION SECTION =============== -->
+
+
+    <!-- ================= SHEDWORKS FOOTER ================= -->
+    <footer class="sw-footer">
+
+        <!-- Main Footer -->
+        <div class="sw-footer-main">
+            <div class="sw-footer-container">
+
+                <!-- Brand Column -->
+                <div class="sw-footer-brand">
+                    <a href="index.html" class="sw-footer-logo">
+                        <img src="images/logo-light.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+                    </a>
+
+                    <p class="sw-footer-description">
+                        Practical outdoor spaces, built around your needs.
+                        Discover durable storage sheds and customizable
+                        outdoor buildings designed to last.
+                    </p>
+
+                    <div class="sw-footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sw-footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="sw-footer-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Storage Sheds</a></li>
+                        <li><a href="products.html">Garden Sheds</a></li>
+                        <li><a href="products.html">Metal Buildings</a></li>
+                        <li><a href="products.html">Wooden Buildings</a></li>
+                        <li><a href="customization.html">Custom Buildings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="sw-footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="customization.html">Customization</a></li>
+                        <li><a href="delivery-installation.html">Delivery</a></li>
+                        <li><a href="delivery-installation.html">Installation</a></li>
+                        <li><a href="contact.html">Request an Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sw-footer-newsletter">
+                    <h3>Stay in the Loop</h3>
+
+                    <p>
+                        Get helpful ideas and updates for your
+                        outdoor space.
+                    </p>
+
+                    <form class="sw-newsletter-form" id="swNewsletterForm">
+                        <label class="sw-sr-only" for="swNewsletterEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="swNewsletterEmail" name="email" placeholder="Enter your email" required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="sw-newsletter-note" id="swNewsletterMessage" aria-live="polite">
+                        Join us for practical outdoor inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="sw-footer-bottom">
+            <div class="sw-footer-bottom-inner">
+
+                <p>
+                    &copy; <span id="swCopyrightYear"></span>
+                    ShedWorks. All rights reserved.
+                </p>
+
+                <div class="sw-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============== END SHEDWORKS FOOTER =============== -->
+
+
+    <!-- Scroll To Top Button -->
+    <button class="sw-scroll-top" id="swScrollTop" type="button" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        (() => {
+            const product = new URLSearchParams(window.location.search).get('product');
+            const message = document.getElementById('swEnquiryMessage');
+            if (product && message) {
+                message.value = `I would like more information about the ${product} development sample.`;
+            }
+        })();
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

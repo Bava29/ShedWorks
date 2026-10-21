@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="sw-header" id="siteHeader">
+        <div class="sw-header-inner">
+
+            <!-- Logo: Left Edge -->
+            <a href="index.html" class="sw-logo" aria-label="ShedWorks Home">
+                <img src="images/logo.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+            </a>
+
+            <!-- Desktop Navigation: Center -->
+            <nav class="sw-desktop-nav" aria-label="Main navigation">
+                <div class="sw-nav-item sw-home-item">
+                    <button class="sw-nav-link sw-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-home-dropdown" id="swHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="sw-nav-link">About</a>
+                <a href="products.html" class="sw-nav-link">Products</a>
+                <a href="customization.html" class="sw-nav-link">Customization</a>
+                <a href="delivery-installation.html" class="sw-nav-link">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html" class="sw-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions: Right Edge -->
+            <div class="sw-desktop-actions">
+
+                <button class="sw-icon-btn sw-theme-toggle" type="button" aria-label="Enable dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="sw-icon-btn sw-rtl-toggle" type="button" aria-label="Switch to RTL layout"
+                    aria-pressed="false" title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="sw-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="sw-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="swMobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation Panel -->
+        <div class="sw-mobile-menu" id="swMobileMenu" aria-hidden="true">
+
+            <nav class="sw-mobile-nav" aria-label="Mobile navigation">
+
+                <div class="sw-mobile-home">
+                    <button class="sw-mobile-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swMobileHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-mobile-home-dropdown" id="swMobileHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="customization.html">Customization</a>
+                <a href="delivery-installation.html">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <!-- Toggles and Login Inside Responsive Menu -->
+            <div class="sw-mobile-actions">
+
+                <button class="sw-mobile-action sw-theme-toggle" type="button" aria-label="Enable dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="sw-mobile-action sw-rtl-toggle" type="button" aria-pressed="false"
+                    aria-label="Switch to RTL layout">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL</span>
+                </button>
+
+                <a href="login.html" class="sw-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- =============== END HEADER =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — COMMON INNER PAGE HERO
+========================================= -->
+    <section class="sw-pagehero products-banner" id="pageHero">
+
+        <div class="sw-pagehero-overlay"></div>
+
+        <div class="sw-pagehero-container">
+
+            <div class="sw-pagehero-content">
+
+                <div class="sw-pagehero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span aria-current="page">Products</span>
+                </div>
+
+                <h1 class="sw-pagehero-title">
+                    Our Collection
+                </h1>
+
+                <p class="sw-pagehero-description">
+                    Explore storage sheds and outdoor buildings in different sizes, materials and styles. Discover a
+                    practical fit for your property, your needs and your plans.
+                </p>
+
+                <div class="sw-pagehero-bottom">
+                    <span class="sw-pagehero-bottom-line"></span>
+                    <span class="sw-pagehero-bottom-text">
+                        YOUR SPACE. YOUR POSSIBILITIES.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END COMMON PAGE HERO =============== -->
+
+
+    <!-- PRODUCTS PAGE - SHOP BY BUILDING TYPE -->
+    <section class="sw-products-category">
+
+        <div class="sw-products-category-container">
+
+            <div class="sw-products-category-header">
+                <div>
+                    <span class="sw-products-category-eyebrow">
+                        EXPLORE OUR COLLECTION
+                    </span>
+
+                    <h2>What Do You Need <span>More Room For?</span></h2>
+                </div>
+
+                <p>
+                    Start with what matters most to you. Explore building
+                    options designed around your storage needs, projects
+                    and outdoor space.
+                </p>
+            </div>
+
+            <div class="sw-products-category-grid">
+
+                <!-- Storage Sheds -->
+                <a href="products.html?category=storage" class="sw-products-category-card">
+
+                    <img src="images/products-storage-shed.jpg"
+                        alt="Outdoor storage shed for garden tools and equipment" loading="lazy">
+
+                    <span class="sw-products-category-number">01</span>
+
+                    <div class="sw-products-category-content">
+                        <span class="sw-products-category-label">
+                            ORGANIZE YOUR SPACE
+                        </span>
+
+                        <h3>Storage Sheds</h3>
+
+                        <p>
+                            Create dedicated room for tools & outdoor
+                            essentials.
+                        </p>
+
+                        <span class="sw-products-category-link">
+                            Explore Storage Sheds
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Workshops -->
+                <a href="products.html?category=workshop" class="sw-products-category-card">
+
+                    <img src="images/products-workshop.jpg" alt="Outdoor workshop shed with a workbench" loading="lazy">
+
+                    <span class="sw-products-category-number">02</span>
+
+                    <div class="sw-products-category-content">
+                        <span class="sw-products-category-label">
+                            MAKE ROOM TO CREATE
+                        </span>
+
+                        <h3>Workshop Buildings</h3>
+
+                        <p>
+                            Find space for hobbies, DIY projects
+                            and hands-on work.
+                        </p>
+
+                        <span class="sw-products-category-link">
+                            Explore Workshops
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Garages and Equipment -->
+                <a href="products.html?category=garage" class="sw-products-category-card">
+
+                    <img src="images/products-garage.jpg" alt="Large outdoor building for vehicle and equipment storage"
+                        loading="lazy">
+
+                    <span class="sw-products-category-number">03</span>
+
+                    <div class="sw-products-category-content">
+                        <span class="sw-products-category-label">
+                            MAKE SPACE FOR MORE
+                        </span>
+
+                        <h3>Garage & Equipment Buildings</h3>
+
+                        <p>
+                            Explore larger building options for
+                            equipment and additional storage.
+                        </p>
+
+                        <span class="sw-products-category-link">
+                            Explore Buildings
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="sw-products-category-footer">
+                <p>
+                    <i class="fa-solid fa-compass"></i>
+                    Not sure where to start? Browse all available buildings.
+                </p>
+
+                <a href="products.html" class="sw-products-category-all">
+                    View All Products
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SMART PRODUCT FILTERS ================= -->
+    <section class="sw-products-filter-section" id="product-listing">
+        <div class="sw-products-filter-container">
+            <header class="sw-products-filter-heading">
+                <span class="sw-products-filter-eyebrow">A DEVELOPMENT PREVIEW</span>
+                <h2>Find the Right Shed for Your Space</h2>
+                <p>Explore available buildings and narrow down your choices by size, material, purpose and budget.</p>
+                <p class="sw-products-filter-notice">Sample listings for development only. ShedWorks inventory,
+                    measurements and specifications have not yet been provided.</p>
+            </header>
+
+            <div class="sw-products-filter-toolbar">
+                <p class="sw-products-filter-count" aria-live="polite"><strong id="swProductsFilterCount">0</strong>
+                    sample products</p>
+                <label class="sw-products-filter-sort">Sort by
+                    <select id="swProductsFilterSort" aria-label="Sort products">
+                        <option value="recommended">Recommended</option>
+                        <option value="price-asc" disabled>Price: Low to High (catalogue prices needed)</option>
+                        <option value="price-desc" disabled>Price: High to Low (catalogue prices needed)</option>
+                        <option value="name">Name A–Z</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="sw-products-filter-layout">
+                <form class="sw-products-filter-panel" id="swProductsFilterForm">
+                    <div class="sw-products-filter-panel-top">
+                        <h3>Filter buildings</h3>
+                        <button class="sw-products-filter-clear" id="swProductsFilterClear" type="button">Clear All
+                            Filters</button>
+                    </div>
+                    <label class="sw-products-filter-field">Search by product name
+                        <input id="swProductsFilterSearch" type="search" placeholder="e.g. garden shed"
+                            autocomplete="off">
+                    </label>
+                    <fieldset class="sw-products-filter-group">
+                        <legend>Size</legend>
+                        <label><input type="checkbox" name="size" value="Small"> Small</label>
+                        <label><input type="checkbox" name="size" value="Medium"> Medium</label>
+                        <label><input type="checkbox" name="size" value="Large"> Large</label>
+                    </fieldset>
+                    <fieldset class="sw-products-filter-group">
+                        <legend>Material</legend>
+                        <label><input type="checkbox" name="material" value="Wood"> Wood</label>
+                        <label><input type="checkbox" name="material" value="Metal"> Metal</label>
+                        <label><input type="checkbox" name="material" value="Resin / Plastic"> Resin / Plastic</label>
+                    </fieldset>
+                    <fieldset class="sw-products-filter-group">
+                        <legend>Purpose</legend>
+                        <label><input type="checkbox" name="purpose" value="Storage"> Storage</label>
+                        <label><input type="checkbox" name="purpose" value="Workshop"> Workshop</label>
+                        <label><input type="checkbox" name="purpose" value="Garage & Equipment"> Garage &amp;
+                            Equipment</label>
+                    </fieldset>
+                    <details class="sw-products-filter-advanced" id="swProductsFilterAdvanced">
+                        <summary>Advanced Filters</summary>
+                        <div class="sw-products-filter-dimensions">
+                            <span>Minimum dimensions (feet)</span>
+                            <label>Width <input type="number" min="0" step="1" name="minWidth"
+                                    inputmode="numeric"></label>
+                            <label>Depth <input type="number" min="0" step="1" name="minDepth"
+                                    inputmode="numeric"></label>
+                            <span>Maximum dimensions (feet)</span>
+                            <label>Width <input type="number" min="0" step="1" name="maxWidth"
+                                    inputmode="numeric"></label>
+                            <label>Depth <input type="number" min="0" step="1" name="maxDepth"
+                                    inputmode="numeric"></label>
+                        </div>
+                        <p>Styles, door types, colours and availability can be added when verified catalogue data is
+                            available.</p>
+                    </details>
+                </form>
+
+                <div class="sw-products-filter-results">
+                    <div class="sw-products-filter-chips" id="swProductsFilterChips" aria-label="Selected filters">
+                    </div>
+                    <div class="sw-products-filter-grid" id="swProductsFilterGrid"></div>
+                    <div class="sw-products-filter-empty" id="swProductsFilterEmpty" hidden>
+                        <h3>No sample buildings match those filters</h3>
+                        <p>Try changing your search or reset the filters to see all development listings.</p>
+                        <button type="button" id="swProductsFilterReset">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRODUCTS - SIZE COMPARISON SECTION -->
+    <section class="sw-products-size">
+
+        <div class="sw-products-size-container">
+
+            <div class="sw-products-size-heading">
+                <span class="sw-products-size-eyebrow">
+                    FIND YOUR PERFECT FIT
+                </span>
+
+                <h2>Choose a Size That <span>Works for You.</span></h2>
+
+                <p>
+                    Think about what you want to store, how you plan to use
+                    your building and how much outdoor space you have available.
+                </p>
+            </div>
+
+            <div class="sw-products-size-grid">
+
+                <!-- SMALL -->
+                <article class="sw-products-size-card">
+                    <div class="sw-products-size-image">
+                        <img src="images/products-size-small.jpg" alt="Compact outdoor storage shed" loading="lazy">
+
+                        <span class="sw-products-size-label">01 / COMPACT</span>
+                    </div>
+
+                    <div class="sw-products-size-content">
+                        <span class="sw-products-size-tag">SMALL BUILDINGS</span>
+
+                        <h3>Small & Compact</h3>
+
+                        <p>
+                            A practical option for everyday essentials,
+                            garden tools and smaller storage needs.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Garden tools and supplies
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Outdoor accessories
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Compact spaces
+                            </li>
+                        </ul>
+
+                        <a href="products.html?size=small" class="sw-products-size-link">
+                            Explore Small Sheds
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- MEDIUM -->
+                <article class="sw-products-size-card sw-products-size-featured">
+                    <div class="sw-products-size-image">
+                        <img src="images/products-size-medium.jpg" alt="Medium backyard storage building"
+                            loading="lazy">
+
+                        <span class="sw-products-size-label">02 / VERSATILE</span>
+                    </div>
+
+                    <div class="sw-products-size-content">
+                        <span class="sw-products-size-tag">MEDIUM BUILDINGS</span>
+
+                        <h3>Medium & Versatile</h3>
+
+                        <p>
+                            Extra room for equipment, seasonal items,
+                            hobby supplies and general storage.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Tools and equipment
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Seasonal storage
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Hobby essentials
+                            </li>
+                        </ul>
+
+                        <a href="products.html?size=medium" class="sw-products-size-link">
+                            Explore Medium Sheds
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LARGE -->
+                <article class="sw-products-size-card">
+                    <div class="sw-products-size-image">
+                        <img src="images/products-size-large.jpg" alt="Large outdoor equipment storage building"
+                            loading="lazy">
+
+                        <span class="sw-products-size-label">03 / SPACIOUS</span>
+                    </div>
+
+                    <div class="sw-products-size-content">
+                        <span class="sw-products-size-tag">LARGE BUILDINGS</span>
+
+                        <h3>Large & Spacious</h3>
+
+                        <p>
+                            Consider a larger building when you need
+                            more room for equipment or bigger projects.
+                        </p>
+
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Larger equipment
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Dedicated work areas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Additional storage
+                            </li>
+                        </ul>
+
+                        <a href="products.html?size=large" class="sw-products-size-link">
+                            Explore Large Sheds
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="sw-products-size-note">
+                <span class="sw-products-size-note-icon">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </span>
+
+                <div>
+                    <h3>Need help deciding on dimensions?</h3>
+                    <p>
+                        Compare the available measurements and check your
+                        usable space before choosing a building.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="sw-products-size-note-link">
+                    Get Guidance
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS - BUYER'S PLANNING GUIDE -->
+    <section class="sw-products-guide">
+
+        <div class="sw-products-guide-container">
+
+            <div class="sw-products-guide-header">
+                <span class="sw-products-guide-eyebrow">
+                    PLAN WITH CONFIDENCE
+                </span>
+
+                <h2>Find a Shed That Fits <span>Your Plans.</span></h2>
+
+                <p>
+                    The right building is about more than size.
+                    Consider these practical details before making your choice.
+                </p>
+            </div>
+
+            <div class="sw-products-guide-layout">
+
+                <!-- Left Visual Panel -->
+                <div class="sw-products-guide-visual">
+
+                    <img src="images/products-planning-guide.jpg" alt="Outdoor shed in a well-planned backyard"
+                        loading="lazy">
+
+                    <div class="sw-products-guide-visual-overlay">
+                        <span class="sw-products-guide-visual-label">
+                            YOUR SHED PLANNING CHECKLIST
+                        </span>
+
+                        <h3>A Little Planning Makes a Better Fit.</h3>
+
+                        <p>
+                            Think about your space, your needs and
+                            how you will use your building every day.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Planning Checklist -->
+                <div class="sw-products-guide-checklist">
+
+                    <article class="sw-products-guide-item">
+                        <span class="sw-products-guide-icon">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                        </span>
+
+                        <div>
+                            <h3>Measure Your Available Space</h3>
+                            <p>
+                                Check the ground area, access routes and
+                                room needed around the building.
+                            </p>
+                        </div>
+
+                        <span class="sw-products-guide-number">01</span>
+                    </article>
+
+                    <article class="sw-products-guide-item">
+                        <span class="sw-products-guide-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </span>
+
+                        <div>
+                            <h3>List What You Need to Store</h3>
+                            <p>
+                                Consider the size of your equipment,
+                                storage boxes and any future needs.
+                            </p>
+                        </div>
+
+                        <span class="sw-products-guide-number">02</span>
+                    </article>
+
+                    <article class="sw-products-guide-item">
+                        <span class="sw-products-guide-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+
+                        <div>
+                            <h3>Compare Materials</h3>
+                            <p>
+                                Review maintenance requirements,
+                                durability and suitability for your setting.
+                            </p>
+                        </div>
+
+                        <span class="sw-products-guide-number">03</span>
+                    </article>
+
+                    <article class="sw-products-guide-item">
+                        <span class="sw-products-guide-icon">
+                            <i class="fa-solid fa-door-open"></i>
+                        </span>
+
+                        <div>
+                            <h3>Check Doors and Access</h3>
+                            <p>
+                                Make sure the entrance works for the items
+                                you plan to move in and out.
+                            </p>
+                        </div>
+
+                        <span class="sw-products-guide-number">04</span>
+                    </article>
+
+                    <article class="sw-products-guide-item">
+                        <span class="sw-products-guide-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </span>
+
+                        <div>
+                            <h3>Review Site Requirements</h3>
+                            <p>
+                                Check local permit rules, foundation needs
+                                and delivery access before ordering.
+                            </p>
+                        </div>
+
+                        <span class="sw-products-guide-number">05</span>
+                    </article>
+
+                    <a href="contact.html" class="sw-products-guide-help">
+                        <span>
+                            <strong>Need help choosing?</strong>
+                            <small>Talk to our team about your requirements.</small>
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS - MATERIAL COMPARISON -->
+    <section class="sw-products-material">
+
+        <div class="sw-products-material-container">
+
+            <div class="sw-products-material-header">
+                <span class="sw-products-material-eyebrow">
+                    UNDERSTAND YOUR OPTIONS
+                </span>
+
+                <h2>Choose the Material <span>That Fits Your Needs.</span></h2>
+
+                <p>
+                    Compare the characteristics of available building
+                    materials before choosing the right option for your space.
+                </p>
+            </div>
+
+            <div class="sw-products-material-grid">
+
+                <!-- Wood -->
+                <article class="sw-products-material-card">
+
+                    <div class="sw-products-material-image">
+                        <img src="images/products-material-wood.jpg" alt="Wooden outdoor storage shed" loading="lazy">
+
+                        <span class="sw-products-material-index">01</span>
+                    </div>
+
+                    <div class="sw-products-material-content">
+                        <span class="sw-products-material-type">
+                            NATURAL APPEARANCE
+                        </span>
+
+                        <h3>Wood</h3>
+
+                        <p>
+                            A traditional look that can suit gardens,
+                            outdoor spaces and workshop settings.
+                        </p>
+
+                        <div class="sw-products-material-detail">
+                            <span>Appearance</span>
+                            <strong>Natural & Classic</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Maintenance</span>
+                            <strong>May need periodic treatment</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Consider</span>
+                            <strong>Moisture protection</strong>
+                        </div>
+
+                        <a href="products.html?material=wood" class="sw-products-material-link">
+                            Explore Wood Buildings
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Metal -->
+                <article class="sw-products-material-card">
+
+                    <div class="sw-products-material-image">
+                        <img src="images/products-material-metal.jpg" alt="Metal outdoor storage building"
+                            loading="lazy">
+
+                        <span class="sw-products-material-index">02</span>
+                    </div>
+
+                    <div class="sw-products-material-content">
+                        <span class="sw-products-material-type">
+                            PRACTICAL DESIGN
+                        </span>
+
+                        <h3>Metal</h3>
+
+                        <p>
+                            A practical option for storage needs, with
+                            maintenance requirements depending on finish.
+                        </p>
+
+                        <div class="sw-products-material-detail">
+                            <span>Appearance</span>
+                            <strong>Clean & Functional</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Maintenance</span>
+                            <strong>Inspect finish and fasteners</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Consider</span>
+                            <strong>Corrosion protection</strong>
+                        </div>
+
+                        <a href="products.html?material=metal" class="sw-products-material-link">
+                            Explore Metal Buildings
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Resin / Plastic -->
+                <article class="sw-products-material-card">
+
+                    <div class="sw-products-material-image">
+                        <img src="images/products-material-resin.jpg" alt="Resin outdoor garden storage shed"
+                            loading="lazy">
+
+                        <span class="sw-products-material-index">03</span>
+                    </div>
+
+                    <div class="sw-products-material-content">
+                        <span class="sw-products-material-type">
+                            LOW-MAINTENANCE OPTION
+                        </span>
+
+                        <h3>Resin / Plastic</h3>
+
+                        <p>
+                            A lightweight storage option that is often
+                            easy to clean, depending on the product.
+                        </p>
+
+                        <div class="sw-products-material-detail">
+                            <span>Appearance</span>
+                            <strong>Simple & Modern</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Maintenance</span>
+                            <strong>Usually easy to clean</strong>
+                        </div>
+
+                        <div class="sw-products-material-detail">
+                            <span>Consider</span>
+                            <strong>Anchoring and weather rating</strong>
+                        </div>
+
+                        <a href="products.html?material=resin" class="sw-products-material-link">
+                            Explore Resin Buildings
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="sw-products-material-note">
+                <span class="sw-products-material-note-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </span>
+
+                <p>
+                    <strong>Before you decide:</strong>
+                    Material performance varies by product construction,
+                    finish and climate. Check each building's specifications
+                    and maintenance recommendations before purchasing.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS - FAQ SECTION -->
+    <section class="sw-products-faq">
+
+        <div class="sw-products-faq-container">
+
+            <div class="sw-products-faq-header">
+                <span class="sw-products-faq-eyebrow">
+                    NEED A LITTLE CLARITY?
+                </span>
+
+                <h2>Questions Before <span>You Choose?</span></h2>
+
+                <p>
+                    Find helpful information to make choosing your
+                    outdoor building easier.
+                </p>
+            </div>
+
+            <div class="sw-products-faq-layout">
+
+                <!-- Left Information Panel -->
+                <div class="sw-products-faq-intro">
+
+                    <div class="sw-products-faq-intro-icon">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </div>
+
+                    <h3>Still deciding on the right building?</h3>
+
+                    <p>
+                        Every property and project is different.
+                        Review these common questions or contact our team
+                        if you need help understanding your options.
+                    </p>
+
+                    <a href="contact.html" class="sw-products-faq-contact">
+                        Ask Our Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <div class="sw-products-faq-note">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>
+                            Tip: Measure your available space before
+                            comparing building dimensions.
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="sw-products-faq-list">
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>How do I choose the right shed size?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Start by listing the items you plan to store
+                                and measuring your available space. Check the
+                                building's external dimensions, door opening
+                                and the clearance needed around it.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>Which building material should I choose?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Compare the materials available in our catalogue
+                                based on appearance, maintenance requirements,
+                                weather suitability and intended use. Review
+                                each product's specifications before deciding.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>Can I customize my building?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Customization depends on the selected building.
+                                Check the available size, color, door and
+                                other configuration options on the individual
+                                product details page.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>Do I need a permit for my shed?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Requirements vary by location, building size,
+                                placement and intended use. Check with your
+                                local building authority before purchasing
+                                or installing a shed.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>How should I prepare the installation area?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Preparation depends on the building and its
+                                installation instructions. Confirm the required
+                                foundation, ground conditions, drainage and
+                                access before arranging installation.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="sw-products-faq-item">
+                        <summary>
+                            <span>How can I check delivery and installation options?</span>
+                            <span class="sw-products-faq-toggle">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </summary>
+
+                        <div class="sw-products-faq-answer">
+                            <p>
+                                Delivery coverage, costs and installation
+                                availability depend on the product and service
+                                area. Contact our team to confirm the options
+                                available for your location.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS - FINAL CTA -->
+    <section class="sw-products-final-cta">
+
+        <div class="sw-products-final-cta-container">
+
+            <div class="sw-products-final-cta-content">
+
+                <span class="sw-products-final-cta-eyebrow">
+                    YOUR NEXT STEP STARTS HERE
+                </span>
+
+                <h2>
+                    Your Space Has
+                    <span>More Potential.</span>
+                </h2>
+
+                <p>
+                    Find a building that fits your space, your storage needs
+                    and your plans. Explore the available options and take
+                    the next step towards a more organized outdoor space.
+                </p>
+
+                <div class="sw-products-final-cta-actions">
+
+                    <a href="products.html" class="sw-products-final-cta-primary">
+                        Explore All Buildings
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="sw-products-final-cta-secondary">
+                        Talk to Our Team
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+                <div class="sw-products-final-cta-note">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Find the right fit for what matters to you.</span>
+                </div>
+
+            </div>
+
+            <div class="sw-products-final-cta-visual">
+
+                <img src="images/products-final-cta.jpg" alt="Outdoor storage building in a landscaped backyard"
+                    loading="lazy">
+
+                <div class="sw-products-final-cta-image-caption">
+                    <span class="sw-products-final-cta-caption-icon">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </span>
+
+                    <div>
+                        <strong>Space That Works for You</strong>
+                        <span>Start with your needs. Find your fit.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHEDWORKS FOOTER ================= -->
+    <footer class="sw-footer">
+
+        <!-- Main Footer -->
+        <div class="sw-footer-main">
+            <div class="sw-footer-container">
+
+                <!-- Brand Column -->
+                <div class="sw-footer-brand">
+                    <a href="index.html" class="sw-footer-logo">
+                        <img src="images/logo-light.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+                    </a>
+
+                    <p class="sw-footer-description">
+                        Practical outdoor spaces, built around your needs.
+                        Discover durable storage sheds and customizable
+                        outdoor buildings designed to last.
+                    </p>
+
+                    <div class="sw-footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sw-footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="sw-footer-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Storage Sheds</a></li>
+                        <li><a href="products.html">Garden Sheds</a></li>
+                        <li><a href="products.html">Metal Buildings</a></li>
+                        <li><a href="products.html">Wooden Buildings</a></li>
+                        <li><a href="customization.html">Custom Buildings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="sw-footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="customization.html">Customization</a></li>
+                        <li><a href="delivery-installation.html">Delivery</a></li>
+                        <li><a href="delivery-installation.html">Installation</a></li>
+                        <li><a href="contact.html">Request an Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sw-footer-newsletter">
+                    <h3>Stay in the Loop</h3>
+
+                    <p>
+                        Get helpful ideas and updates for your
+                        outdoor space.
+                    </p>
+
+                    <form class="sw-newsletter-form" id="swNewsletterForm">
+                        <label class="sw-sr-only" for="swNewsletterEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="swNewsletterEmail" name="email" placeholder="Enter your email" required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="sw-newsletter-note" id="swNewsletterMessage" aria-live="polite">
+                        Join us for practical outdoor inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="sw-footer-bottom">
+            <div class="sw-footer-bottom-inner">
+
+                <p>
+                    &copy; <span id="swCopyrightYear"></span>
+                    ShedWorks. All rights reserved.
+                </p>
+
+                <div class="sw-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============== END SHEDWORKS FOOTER =============== -->
+
+
+    <!-- Scroll To Top Button -->
+    <button class="sw-scroll-top" id="swScrollTop" type="button" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        (() => {
+            // Replace this clearly marked development array with verified ShedWorks catalogue data.
+            const sampleProducts = [
+                { id: 'sample-storage', name: 'Sample Garden Storage Shed', size: 'Small', material: 'Wood', purpose: 'Storage', width: 8, depth: 10, image: 'images/product-1.jpg', alt: 'Sample outdoor storage shed', detail: 'Garden storage shed' },
+                { id: 'sample-workshop', name: 'Sample Outdoor Workshop', size: 'Medium', material: 'Wood', purpose: 'Workshop', width: 12, depth: 16, image: 'images/product-2.jpg', alt: 'Sample outdoor workshop building', detail: 'Outdoor workshop' },
+                { id: 'sample-garage', name: 'Garage & Equipment Building', size: 'Large', material: 'Metal', purpose: 'Garage & Equipment', width: 20, depth: 24, image: 'images/product-3.jpg', alt: 'Sample garage and equipment building', detail: 'Garage and equipment building' },
+                { id: 'sample-resin', name: 'Sample Resin Utility Shed', size: 'Small', material: 'Resin / Plastic', purpose: 'Storage', width: 6, depth: 8, image: 'images/product-4.jpg', alt: 'Sample utility storage shed', detail: 'Resin utility shed' },
+                { id: 'sample-05', name: 'Compact Garden Shed', size: 'Small', material: 'Wood', purpose: 'Storage', width: 8, depth: 8, image: 'images/product-5.jpg', alt: 'Sample compact garden shed', detail: 'Compact garden shed' },
+                { id: 'sample-06', name: 'Sample Tool Storage Building', size: 'Small', material: 'Metal', purpose: 'Storage', width: 8, depth: 10, image: 'images/product-6.jpg', alt: 'Sample tool storage building', detail: 'Tool storage building' },
+                { id: 'sample-07', name: 'Sample Garden Workshop', size: 'Medium', material: 'Wood', purpose: 'Workshop', width: 10, depth: 14, image: 'images/product-7.jpg', alt: 'Sample garden workshop', detail: 'Garden workshop' },
+                { id: 'sample-08', name: 'Sample Resin Garden Store', size: 'Small', material: 'Resin / Plastic', purpose: 'Storage', width: 6, depth: 10, image: 'images/product-8.jpg', alt: 'Sample resin garden store', detail: 'Resin garden store' },
+                { id: 'sample-09', name: 'Sample Equipment Garage', size: 'Large', material: 'Metal', purpose: 'Garage & Equipment', width: 18, depth: 24, image: 'images/product-9.jpg', alt: 'Sample equipment garage', detail: 'Equipment garage' },
+                { id: 'sample-10', name: 'Sample Hobby Workshop', size: 'Medium', material: 'Metal', purpose: 'Workshop', width: 12, depth: 12, image: 'images/product-10.jpg', alt: 'Sample hobby workshop', detail: 'Hobby workshop' },
+                { id: 'sample-11', name: 'Sample Utility Storage Shed', size: 'Small', material: 'Wood', purpose: 'Storage', width: 8, depth: 12, image: 'images/product-11.jpg', alt: 'Sample utility storage shed', detail: 'Utility storage shed' },
+                { id: 'sample-12', name: 'Sample Equipment Workshop', size: 'Large', material: 'Wood', purpose: 'Workshop', width: 16, depth: 20, image: 'images/product-12.jpg', alt: 'Sample equipment workshop', detail: 'Equipment workshop' },
+                { id: 'sample-13', name: 'Sample Resin Tool Shed', size: 'Small', material: 'Resin / Plastic', purpose: 'Storage', width: 6, depth: 6, image: 'images/product-13.jpg', alt: 'Sample resin tool shed', detail: 'Resin tool shed' },
+                { id: 'sample-14', name: 'Vehicle Storage Building', size: 'Large', material: 'Metal', purpose: 'Garage & Equipment', width: 20, depth: 28, image: 'images/product-14.jpg', alt: 'Sample vehicle storage building', detail: 'Vehicle storage building' },
+                { id: 'sample-15', name: 'Sample Backyard Studio Shed', size: 'Medium', material: 'Wood', purpose: 'Workshop', width: 12, depth: 16, image: 'images/product-15.jpg', alt: 'Sample backyard studio shed', detail: 'Backyard studio shed' },
+                { id: 'sample-16', name: 'Resin Equipment Store', size: 'Medium', material: 'Resin / Plastic', purpose: 'Storage', width: 8, depth: 12, image: 'images/product-16.jpg', alt: 'Sample resin equipment store', detail: 'Resin equipment store' },
+                { id: 'sample-17', name: 'Sample Large Garden Shed', size: 'Large', material: 'Wood', purpose: 'Storage', width: 12, depth: 20, image: 'images/product-17.jpg', alt: 'Sample large garden shed', detail: 'Large garden shed' },
+                { id: 'sample-18', name: 'Metal Project Workshop', size: 'Medium', material: 'Metal', purpose: 'Workshop', width: 12, depth: 16, image: 'images/product-18.jpg', alt: 'Sample metal project workshop', detail: 'Metal project workshop' },
+                { id: 'sample-19', name: 'Sample Farm Equipment Shed', size: 'Large', material: 'Metal', purpose: 'Garage & Equipment', width: 24, depth: 30, image: 'images/product-19.jpg', alt: 'Sample farm equipment shed', detail: 'Farm equipment shed' },
+                { id: 'sample-20', name: 'Resin Garden Utility Shed', size: 'Small', material: 'Resin / Plastic', purpose: 'Storage', width: 8, depth: 8, image: 'images/product-20.jpg', alt: 'Sample resin garden utility shed', detail: 'Resin garden utility shed' },
+                { id: 'sample-21', name: 'Woodworking Building', size: 'Large', material: 'Wood', purpose: 'Workshop', width: 16, depth: 24, image: 'images/product-21.jpg', alt: 'Sample woodworking building', detail: 'Woodworking building' },
+                { id: 'sample-22', name: 'Compact Equipment Garage', size: 'Medium', material: 'Metal', purpose: 'Garage & Equipment', width: 12, depth: 20, image: 'images/product-22.jpg', alt: 'Sample compact equipment garage', detail: 'Compact equipment garage' },
+                { id: 'sample-23', name: 'Sample Garden Tool House', size: 'Small', material: 'Wood', purpose: 'Storage', width: 8, depth: 10, image: 'images/product-23.jpg', alt: 'Sample garden tool house', detail: 'Garden tool house' },
+                { id: 'sample-24', name: 'Resin Storage Building', size: 'Medium', material: 'Resin / Plastic', purpose: 'Storage', width: 10, depth: 12, image: 'images/product-24.jpg', alt: 'Sample resin storage building', detail: 'Resin storage building' }
+            ];
+            const form = document.getElementById('swProductsFilterForm');
+            const grid = document.getElementById('swProductsFilterGrid');
+            const count = document.getElementById('swProductsFilterCount');
+            const chips = document.getElementById('swProductsFilterChips');
+            const empty = document.getElementById('swProductsFilterEmpty');
+            const params = new URLSearchParams(location.search);
+            const categoryPurpose = { storage: 'Storage', workshop: 'Workshop', garage: 'Garage & Equipment' }[params.get('category')];
+            if (categoryPurpose) form.querySelector(`input[name="purpose"][value="${categoryPurpose}"]`).checked = true;
+            const checked = name => [...form.querySelectorAll(`input[name="${name}"]:checked`)].map(input => input.value);
+            const readNumber = name => {
+                const field = form.elements[name];
+                return field.value === '' ? null : Math.max(0, Number(field.value));
+            };
+            function render() {
+                const query = document.getElementById('swProductsFilterSearch').value.trim().toLowerCase();
+                const sizes = checked('size'), materials = checked('material'), purposes = checked('purpose');
+                const minWidth = readNumber('minWidth'), minDepth = readNumber('minDepth');
+                const maxWidth = readNumber('maxWidth'), maxDepth = readNumber('maxDepth');
+                // Keep numeric ranges valid by moving an opposing bound to the edited value.
+                [['minWidth', 'maxWidth'], ['minDepth', 'maxDepth']].forEach(([low, high]) => {
+                    const lo = readNumber(low), hi = readNumber(high);
+                    if (lo !== null && hi !== null && lo > hi) {
+                        const active = document.activeElement?.name;
+                        form.elements[active === high ? low : high].value = String(active === high ? hi : lo);
+                    }
+                });
+                const validMinWidth = readNumber('minWidth'), validMinDepth = readNumber('minDepth');
+                const validMaxWidth = readNumber('maxWidth'), validMaxDepth = readNumber('maxDepth');
+                let filtered = sampleProducts.filter(product =>
+                    (!query || product.name.toLowerCase().includes(query)) &&
+                    (!sizes.length || sizes.includes(product.size)) &&
+                    (!materials.length || materials.includes(product.material)) &&
+                    (!purposes.length || purposes.includes(product.purpose)) &&
+                    (validMinWidth === null || product.width >= validMinWidth) &&
+                    (validMinDepth === null || product.depth >= validMinDepth) &&
+                    (validMaxWidth === null || product.width <= validMaxWidth) &&
+                    (validMaxDepth === null || product.depth <= validMaxDepth));
+                const sort = document.getElementById('swProductsFilterSort').value;
+                if (sort === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name));
+                count.textContent = filtered.length;
+                grid.innerHTML = filtered.map(product => `<article class="sw-products-filter-card">
+                    <div class="sw-products-filter-image"><img src="${product.image}" alt="${product.alt}" loading="lazy"></div>
+                    <div class="sw-products-filter-card-content"><span class="sw-products-filter-sample-tag">Development sample</span>
+                    <h3>${product.name}</h3><p class="sw-products-filter-dim">${product.width} ft × ${product.depth} ft</p>
+                    <dl><div><dt>Material</dt><dd>${product.material}</dd></div><div><dt>Purpose</dt><dd>${product.purpose}</dd></div></dl>
+                    <a href="contact.html?product=${encodeURIComponent(product.detail)}#contactForm" class="sw-products-filter-details">View Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div></article>`).join('');
+                empty.hidden = filtered.length > 0;
+                grid.hidden = filtered.length === 0;
+                const selected = [...form.querySelectorAll('input:checked')].map(input => ({ label: input.value, clear: () => { input.checked = false; render(); } }));
+                if (query) selected.push({ label: `Search: ${query}`, clear: () => { document.getElementById('swProductsFilterSearch').value = ''; render(); } });
+                [['minWidth', 'Min width'], ['minDepth', 'Min depth'], ['maxWidth', 'Max width'], ['maxDepth', 'Max depth']].forEach(([key, label]) => {
+                    const value = readNumber(key); if (value !== null) selected.push({ label: `${label}: ${value} ft`, clear: () => { form.elements[key].value = ''; render(); } });
+                });
+                chips.innerHTML = selected.map((item, index) => `<button type="button" class="sw-products-filter-chip" data-chip="${index}" aria-label="Remove ${item.label}">${item.label} <span aria-hidden="true">×</span></button>`).join('');
+                chips.querySelectorAll('[data-chip]').forEach(button => button.addEventListener('click', () => selected[Number(button.dataset.chip)].clear()));
+            }
+            form.addEventListener('input', render);
+            document.getElementById('swProductsFilterSort').addEventListener('change', render);
+            function clearFilters() { form.reset(); document.getElementById('swProductsFilterSearch').value = ''; render(); }
+            document.getElementById('swProductsFilterClear').addEventListener('click', clearFilters);
+            document.getElementById('swProductsFilterReset').addEventListener('click', clearFilters);
+            render();
+        })();
+    </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

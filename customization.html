@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="sw-header" id="siteHeader">
+        <div class="sw-header-inner">
+
+            <!-- Logo: Left Edge -->
+            <a href="index.html" class="sw-logo" aria-label="ShedWorks Home">
+                <img src="images/logo.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+            </a>
+
+            <!-- Desktop Navigation: Center -->
+            <nav class="sw-desktop-nav" aria-label="Main navigation">
+                <div class="sw-nav-item sw-home-item">
+                    <button class="sw-nav-link sw-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-home-dropdown" id="swHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="sw-nav-link">About</a>
+                <a href="products.html" class="sw-nav-link">Products</a>
+                <a href="customization.html" class="sw-nav-link">Customization</a>
+                <a href="delivery-installation.html" class="sw-nav-link">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html" class="sw-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions: Right Edge -->
+            <div class="sw-desktop-actions">
+
+                <button class="sw-icon-btn sw-theme-toggle" type="button" aria-label="Enable dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="sw-icon-btn sw-rtl-toggle" type="button" aria-label="Switch to RTL layout"
+                    aria-pressed="false" title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="sw-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="sw-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="swMobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation Panel -->
+        <div class="sw-mobile-menu" id="swMobileMenu" aria-hidden="true">
+
+            <nav class="sw-mobile-nav" aria-label="Mobile navigation">
+
+                <div class="sw-mobile-home">
+                    <button class="sw-mobile-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swMobileHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-mobile-home-dropdown" id="swMobileHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="customization.html">Customization</a>
+                <a href="delivery-installation.html">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <!-- Toggles and Login Inside Responsive Menu -->
+            <div class="sw-mobile-actions">
+
+                <button class="sw-mobile-action sw-theme-toggle" type="button" aria-label="Enable dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="sw-mobile-action sw-rtl-toggle" type="button" aria-pressed="false"
+                    aria-label="Switch to RTL layout">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL</span>
+                </button>
+
+                <a href="login.html" class="sw-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- =============== END HEADER =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — COMMON INNER PAGE HERO
+========================================= -->
+    <section class="sw-pagehero custom-banner" id="pageHero">
+
+        <div class="sw-pagehero-overlay"></div>
+
+        <div class="sw-pagehero-container">
+
+            <div class="sw-pagehero-content">
+
+                <div class="sw-pagehero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span aria-current="page">Customization</span>
+                </div>
+
+                <h1 class="sw-pagehero-title">
+                    Your Shed. Your Style. <br> Your Way.
+                </h1>
+
+                <p class="sw-pagehero-description">
+                    Create a space that fits your needs with available size, colour, door and window options. Explore
+                    the possibilities and find the right combination for your property.
+                </p>
+
+                <div class="sw-pagehero-bottom">
+                    <span class="sw-pagehero-bottom-line"></span>
+                    <span class="sw-pagehero-bottom-text">
+                        YOUR SPACE. YOUR POSSIBILITIES.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END COMMON PAGE HERO =============== -->
+
+
+
+    <!-- SECTION 2: INTERACTIVE CUSTOMIZATION STUDIO -->
+    <section class="sw-studio" id="customization-studio">
+        <div class="sw-studio-container">
+
+            <div class="sw-studio-heading">
+                <span class="sw-studio-eyebrow">YOUR BUILDING, YOUR CHOICES</span>
+                <h2>Build Your Shed Around Your Needs.</h2>
+                <p>
+                    Choose your preferred size, appearance and features.
+                    Review your selections before contacting our team.
+                </p>
+            </div>
+
+            <div class="sw-studio-layout">
+
+                <!-- LEFT: CUSTOMIZATION CONTROLS -->
+                <div class="sw-studio-controls">
+
+                    <div class="sw-studio-progress">
+                        <div class="sw-studio-progress-top">
+                            <span>Your customization</span>
+                            <span id="swStudioProgressText">Step 1 of 4</span>
+                        </div>
+                        <div class="sw-studio-progress-track">
+                            <span id="swStudioProgressBar"></span>
+                        </div>
+                    </div>
+
+                    <!-- STEP 1 -->
+                    <div class="sw-studio-step is-active" data-step="1">
+                        <div class="sw-studio-step-heading">
+                            <span class="sw-studio-step-number">01</span>
+                            <div>
+                                <h3>Choose Your Size</h3>
+                                <p>Start with the space you need.</p>
+                            </div>
+                        </div>
+
+                        <div class="sw-studio-choice-grid sw-studio-size-grid">
+                            <label class="sw-studio-choice">
+                                <input type="radio" name="swStudioSize" value="Small"
+                                    data-detail="Compact storage needs" checked>
+                                <span class="sw-studio-choice-inner">
+                                    <i class="fa-solid fa-box" aria-hidden="true"></i>
+                                    <strong>Small</strong>
+                                    <small>Compact storage</small>
+                                    <span class="sw-studio-radio-mark"></span>
+                                </span>
+                            </label>
+
+                            <label class="sw-studio-choice">
+                                <input type="radio" name="swStudioSize" value="Medium"
+                                    data-detail="Everyday storage needs">
+                                <span class="sw-studio-choice-inner">
+                                    <i class="fa-solid fa-warehouse" aria-hidden="true"></i>
+                                    <strong>Medium</strong>
+                                    <small>Everyday storage</small>
+                                    <span class="sw-studio-radio-mark"></span>
+                                </span>
+                            </label>
+
+                            <label class="sw-studio-choice">
+                                <input type="radio" name="swStudioSize" value="Large"
+                                    data-detail="More room for equipment">
+                                <span class="sw-studio-choice-inner">
+                                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                                    <strong>Large</strong>
+                                    <small>More room</small>
+                                    <span class="sw-studio-radio-mark"></span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <p class="sw-studio-helper">
+                            <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                            Need exact dimensions? Confirm available measurements with our team.
+                        </p>
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="sw-studio-step" data-step="2">
+                        <div class="sw-studio-step-heading">
+                            <span class="sw-studio-step-number">02</span>
+                            <div>
+                                <h3>Select Your Colour</h3>
+                                <p>Choose the look that suits your property.</p>
+                            </div>
+                        </div>
+
+                        <div class="sw-studio-colours">
+                            <label class="sw-studio-colour">
+                                <input type="radio" name="swStudioColour" value="Navy" checked>
+                                <span class="sw-studio-colour-swatch sw-studio-navy"></span>
+                                <span>Navy</span>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </label>
+
+                            <label class="sw-studio-colour">
+                                <input type="radio" name="swStudioColour" value="Charcoal">
+                                <span class="sw-studio-colour-swatch sw-studio-charcoal"></span>
+                                <span>Charcoal</span>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </label>
+
+                            <label class="sw-studio-colour">
+                                <input type="radio" name="swStudioColour" value="Ivory">
+                                <span class="sw-studio-colour-swatch sw-studio-ivory"></span>
+                                <span>Ivory</span>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </label>
+
+                            <label class="sw-studio-colour">
+                                <input type="radio" name="swStudioColour" value="Forest Green">
+                                <span class="sw-studio-colour-swatch sw-studio-forest"></span>
+                                <span>Forest Green</span>
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </label>
+                        </div>
+
+                        <p class="sw-studio-helper">
+                            Colour choices shown are examples. Actual availability depends on the building model.
+                        </p>
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="sw-studio-step" data-step="3">
+                        <div class="sw-studio-step-heading">
+                            <span class="sw-studio-step-number">03</span>
+                            <div>
+                                <h3>Doors & Windows</h3>
+                                <p>Think about access, equipment and natural light.</p>
+                            </div>
+                        </div>
+
+                        <div class="sw-studio-field">
+                            <label for="swStudioDoor">Preferred door setup</label>
+                            <select id="swStudioDoor" name="swStudioDoor">
+                                <option value="Single door">Single door</option>
+                                <option value="Double doors">Double doors</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-studio-field">
+                            <label>Would you like windows?</label>
+                            <div class="sw-studio-toggle-options">
+                                <label>
+                                    <input type="radio" name="swStudioWindow" value="Yes">
+                                    <span>Yes, windows</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="swStudioWindow" value="No" checked>
+                                    <span>No windows</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="swStudioWindow" value="Undecided">
+                                    <span>Undecided</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4 -->
+                    <div class="sw-studio-step" data-step="4">
+                        <div class="sw-studio-step-heading">
+                            <span class="sw-studio-step-number">04</span>
+                            <div>
+                                <h3>Make It Work for You</h3>
+                                <p>Tell us how you plan to use your building.</p>
+                            </div>
+                        </div>
+
+                        <div class="sw-studio-field">
+                            <label for="swStudioPurpose">Main purpose</label>
+                            <select id="swStudioPurpose" name="swStudioPurpose">
+                                <option value="General storage">General storage</option>
+                                <option value="Garden equipment">Garden equipment</option>
+                                <option value="Workshop">Workshop</option>
+                                <option value="Tools and machinery">Tools and machinery</option>
+                                <option value="Other purpose">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="sw-studio-field">
+                            <span class="sw-studio-field-label">Features to discuss</span>
+
+                            <div class="sw-studio-addon-list">
+                                <label class="sw-studio-addon">
+                                    <input type="checkbox" name="swStudioAddon" value="Shelving">
+                                    <span class="sw-studio-addon-icon">
+                                        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="sw-studio-addon-text">
+                                        <strong>Shelving</strong>
+                                        <small>Organized storage</small>
+                                    </span>
+                                    <i class="fa-solid fa-plus sw-studio-addon-plus" aria-hidden="true"></i>
+                                </label>
+
+                                <label class="sw-studio-addon">
+                                    <input type="checkbox" name="swStudioAddon" value="Ramp">
+                                    <span class="sw-studio-addon-icon">
+                                        <i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="sw-studio-addon-text">
+                                        <strong>Access ramp</strong>
+                                        <small>For easier equipment access</small>
+                                    </span>
+                                    <i class="fa-solid fa-plus sw-studio-addon-plus" aria-hidden="true"></i>
+                                </label>
+
+                                <label class="sw-studio-addon">
+                                    <input type="checkbox" name="swStudioAddon" value="Additional ventilation">
+                                    <span class="sw-studio-addon-icon">
+                                        <i class="fa-solid fa-wind" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="sw-studio-addon-text">
+                                        <strong>Ventilation</strong>
+                                        <small>Discuss airflow requirements</small>
+                                    </span>
+                                    <i class="fa-solid fa-plus sw-studio-addon-plus" aria-hidden="true"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP NAVIGATION -->
+                    <div class="sw-studio-navigation">
+                        <button type="button" class="sw-studio-back" id="swStudioBack" disabled>
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            Back
+                        </button>
+
+                        <button type="button" class="sw-studio-next" id="swStudioNext">
+                            Continue
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: LIVE SUMMARY -->
+                <aside class="sw-studio-preview">
+
+                    <div class="sw-studio-preview-top">
+                        <span class="sw-studio-preview-label">
+                            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                            YOUR DESIGN SUMMARY
+                        </span>
+                        <span class="sw-studio-live">
+                            <span></span> Live updates
+                        </span>
+                    </div>
+
+                    <div class="sw-studio-preview-image">
+                        <img src="images/customize-studio.jpg" alt="Example outdoor storage shed" loading="lazy">
+                        <span class="sw-studio-preview-tag">ILLUSTRATIVE EXAMPLE</span>
+                    </div>
+
+                    <div class="sw-studio-preview-body">
+                        <h3>Your Shed Preferences</h3>
+                        <p class="sw-studio-preview-description">
+                            Your selections will appear here as you customize.
+                        </p>
+
+                        <div class="sw-studio-summary">
+
+                            <div class="sw-studio-summary-row">
+                                <span>Preferred size</span>
+                                <strong id="swSummarySize">Small</strong>
+                            </div>
+
+                            <div class="sw-studio-summary-row">
+                                <span>Colour choice</span>
+                                <strong id="swSummaryColour">Navy</strong>
+                            </div>
+
+                            <div class="sw-studio-summary-row">
+                                <span>Door setup</span>
+                                <strong id="swSummaryDoor">Single door</strong>
+                            </div>
+
+                            <div class="sw-studio-summary-row">
+                                <span>Windows</span>
+                                <strong id="swSummaryWindow">No</strong>
+                            </div>
+
+                            <div class="sw-studio-summary-row">
+                                <span>Main purpose</span>
+                                <strong id="swSummaryPurpose">General storage</strong>
+                            </div>
+
+                            <div class="sw-studio-summary-row sw-studio-summary-features">
+                                <span>Features to discuss</span>
+                                <strong id="swSummaryAddons">None selected</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="sw-studio-preview-note">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            <p>
+                                This is a preference summary, not a confirmed quote.
+                                Final options and pricing require confirmation.
+                            </p>
+                        </div>
+
+                        <button type="button" class="sw-studio-submit" id="swStudioSubmit">
+                            Send My Preferences
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="sw-studio-reset" id="swStudioReset">
+                            <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                            Start Over
+                        </button>
+                    </div>
+
+                </aside>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: MATERIAL COMPARISON -->
+    <section class="sw-material-tool" id="customize-material-guide">
+        <div class="sw-material-container">
+
+            <div class="sw-material-heading">
+                <span class="sw-material-eyebrow">MAKE AN INFORMED CHOICE</span>
+                <h2>Find the Right Material for Your Shed.</h2>
+                <p>
+                    Compare the key considerations behind different materials
+                    and decide what matters most for your building.
+                </p>
+            </div>
+
+            <div class="sw-material-layout">
+
+                <!-- LEFT: MATERIAL SELECTOR -->
+                <div class="sw-material-selector">
+
+                    <div class="sw-material-selector-top">
+                        <span class="sw-material-step">01 / SELECT A MATERIAL</span>
+                        <span class="sw-material-live">
+                            <span></span> Interactive guide
+                        </span>
+                    </div>
+
+                    <div class="sw-material-tabs" role="group" aria-label="Choose a material">
+
+                        <button type="button" class="sw-material-tab is-active" data-material="wood"
+                            aria-pressed="true">
+                            <span class="sw-material-tab-icon">
+                                <i class="fa-solid fa-tree" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <strong>Wood</strong>
+                                <small>Natural appearance</small>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="sw-material-tab" data-material="metal" aria-pressed="false">
+                            <span class="sw-material-tab-icon">
+                                <i class="fa-solid fa-warehouse" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <strong>Metal</strong>
+                                <small>Practical construction</small>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </button>
+
+                        <button type="button" class="sw-material-tab" data-material="resin" aria-pressed="false">
+                            <span class="sw-material-tab-icon">
+                                <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <strong>Resin / Plastic</strong>
+                                <small>Easy-care option</small>
+                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="sw-material-detail" aria-live="polite">
+                        <div class="sw-material-detail-image">
+                            <img id="swMaterialImage" src="images/customize-material-wood.jpg"
+                                alt="Wooden outdoor storage shed" loading="lazy">
+                            <span id="swMaterialImageLabel">MATERIAL 01</span>
+                        </div>
+
+                        <div class="sw-material-detail-content">
+                            <span class="sw-material-detail-eyebrow" id="swMaterialEyebrow">
+                                NATURAL CHARACTER
+                            </span>
+
+                            <h3 id="swMaterialTitle">Wood</h3>
+
+                            <p id="swMaterialDescription">
+                                A traditional appearance with flexibility for different
+                                exterior styles. Maintenance and finish requirements depend
+                                on the specific wood and product.
+                            </p>
+
+                            <div class="sw-material-highlights" id="swMaterialHighlights">
+                                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Natural look</span>
+                                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Style flexibility</span>
+                                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Finish considerations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: USER PRIORITIES -->
+                <div class="sw-material-priorities">
+
+                    <span class="sw-material-step">02 / WHAT MATTERS MOST?</span>
+                    <h3>Choose Your Priority.</h3>
+                    <p>
+                        Select the factor that matters most to you.
+                        We'll highlight the comparison points worth reviewing.
+                    </p>
+
+                    <div class="sw-material-priority-list">
+
+                        <label class="sw-material-priority">
+                            <input type="radio" name="swMaterialPriority" value="maintenance" checked>
+                            <span class="sw-material-priority-icon">
+                                <i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i>
+                            </span>
+                            <span class="sw-material-priority-copy">
+                                <strong>Maintenance</strong>
+                                <small>Cleaning, upkeep and finish requirements</small>
+                            </span>
+                            <span class="sw-material-priority-check">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </span>
+                        </label>
+
+                        <label class="sw-material-priority">
+                            <input type="radio" name="swMaterialPriority" value="appearance">
+                            <span class="sw-material-priority-icon">
+                                <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                            </span>
+                            <span class="sw-material-priority-copy">
+                                <strong>Appearance</strong>
+                                <small>Texture, finish and overall style</small>
+                            </span>
+                            <span class="sw-material-priority-check">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </span>
+                        </label>
+
+                        <label class="sw-material-priority">
+                            <input type="radio" name="swMaterialPriority" value="durability">
+                            <span class="sw-material-priority-icon">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            </span>
+                            <span class="sw-material-priority-copy">
+                                <strong>Durability</strong>
+                                <small>Weather exposure and expected service life</small>
+                            </span>
+                            <span class="sw-material-priority-check">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </span>
+                        </label>
+
+                        <label class="sw-material-priority">
+                            <input type="radio" name="swMaterialPriority" value="usage">
+                            <span class="sw-material-priority-icon">
+                                <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+                            </span>
+                            <span class="sw-material-priority-copy">
+                                <strong>Intended Use</strong>
+                                <small>Everyday storage, tools or workspace needs</small>
+                            </span>
+                            <span class="sw-material-priority-check">
+                                <i class="fa-solid fa-check" aria-hidden="true"></i>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div class="sw-material-insight" aria-live="polite">
+                        <span class="sw-material-insight-icon">
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong id="swMaterialInsightTitle">What to compare</strong>
+                            <p id="swMaterialInsightText">
+                                Check cleaning requirements, repainting or treatment needs,
+                                and the manufacturer's maintenance instructions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="sw-material-compare-btn" id="swMaterialCompare">
+                        Compare All Materials
+                        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- COMPARISON TABLE -->
+            <div class="sw-material-comparison" id="sw-material-comparison">
+
+                <div class="sw-material-comparison-heading">
+                    <div>
+                        <span class="sw-material-step">03 / SIDE-BY-SIDE</span>
+                        <h3>Compare Before You Decide.</h3>
+                    </div>
+                    <p>
+                        General considerations only. Actual performance depends on
+                        the product, construction, finish and installation.
+                    </p>
+                </div>
+
+                <div class="sw-material-table-wrap">
+                    <table class="sw-material-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">What to compare</th>
+                                <th scope="col">Wood</th>
+                                <th scope="col">Metal</th>
+                                <th scope="col">Resin / Plastic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-compare="appearance">
+                                <th scope="row">Appearance</th>
+                                <td>Natural grain and traditional styles</td>
+                                <td>Clean, practical exterior styles</td>
+                                <td>Varies by moulded finish and design</td>
+                            </tr>
+                            <tr data-compare="maintenance">
+                                <th scope="row">Maintenance</th>
+                                <td>May need periodic sealing, painting or treatment</td>
+                                <td>Check coating condition and corrosion protection</td>
+                                <td>Often straightforward cleaning; check product care</td>
+                            </tr>
+                            <tr data-compare="durability">
+                                <th scope="row">Weather considerations</th>
+                                <td>Moisture protection and ventilation matter</td>
+                                <td>Coating, corrosion resistance and condensation matter</td>
+                                <td>UV exposure, temperature and material quality matter</td>
+                            </tr>
+                            <tr data-compare="usage">
+                                <th scope="row">Intended use</th>
+                                <td>Check structure and load suitability for the intended use</td>
+                                <td>Check structure, access and intended-use requirements</td>
+                                <td>Check dimensions, load limits and intended-use requirements</td>
+                            </tr>
+                            <tr data-compare="maintenance">
+                                <th scope="row">Before purchasing</th>
+                                <td>Ask about treatment and upkeep schedules</td>
+                                <td>Ask about finish, corrosion protection and ventilation</td>
+                                <td>Ask about UV resistance, assembly and load limits</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="sw-material-disclaimer">
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                    <p>
+                        This guide is for general comparison, not a product rating.
+                        Verify specifications, warranties, local weather suitability
+                        and available materials with ShedWorks before purchasing.
+                    </p>
+                </div>
+
+                <div class="sw-material-bottom">
+                    <div>
+                        <h3>Found a material worth exploring?</h3>
+                        <p>Ask our team which options are available for your preferred building.</p>
+                    </div>
+                    <a href="contact.html" class="sw-material-contact">
+                        Check Availability
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 4: SHED SPACE PLANNER -->
+    <section class="sw-space-planner" id="customize-space-planner">
+        <div class="sw-space-container">
+
+            <div class="sw-space-heading">
+                <span class="sw-space-eyebrow">PLAN BEFORE YOU BUILD</span>
+                <h2>Will Your Shed Fit Your Space?</h2>
+                <p>
+                    Enter your available area and preferred shed dimensions to
+                    compare the footprint and plan your next steps.
+                </p>
+            </div>
+
+            <div class="sw-space-layout">
+
+                <!-- INPUT PANEL -->
+                <div class="sw-space-form">
+
+                    <div class="sw-space-panel-heading">
+                        <span class="sw-space-step">01</span>
+                        <div>
+                            <h3>Your Available Space</h3>
+                            <p>Measure the clear area where you plan to place the shed.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-units">
+                        <span>Measurement unit</span>
+                        <div class="sw-space-unit-buttons">
+                            <label>
+                                <input type="radio" name="swSpaceUnit" value="ft" checked>
+                                <span>Feet (ft)</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="swSpaceUnit" value="m">
+                                <span>Metres (m)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-fields">
+                        <div class="sw-space-field">
+                            <label for="swAvailableWidth">Available width</label>
+                            <div class="sw-space-input-wrap">
+                                <input type="number" id="swAvailableWidth" min="0.1" max="10000" step="any" value="20"
+                                    inputmode="decimal">
+                                <span class="sw-space-unit-label">ft</span>
+                            </div>
+                        </div>
+
+                        <div class="sw-space-field">
+                            <label for="swAvailableLength">Available length</label>
+                            <div class="sw-space-input-wrap">
+                                <input type="number" id="swAvailableLength" min="0.1" max="10000" step="any" value="25"
+                                    inputmode="decimal">
+                                <span class="sw-space-unit-label">ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-divider"></div>
+
+                    <div class="sw-space-panel-heading">
+                        <span class="sw-space-step">02</span>
+                        <div>
+                            <h3>Your Preferred Shed</h3>
+                            <p>Enter dimensions from the product specifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-fields">
+                        <div class="sw-space-field">
+                            <label for="swShedWidth">Shed width</label>
+                            <div class="sw-space-input-wrap">
+                                <input type="number" id="swShedWidth" min="0.1" max="10000" step="any" value="10"
+                                    inputmode="decimal">
+                                <span class="sw-space-unit-label">ft</span>
+                            </div>
+                        </div>
+
+                        <div class="sw-space-field">
+                            <label for="swShedLength">Shed length</label>
+                            <div class="sw-space-input-wrap">
+                                <input type="number" id="swShedLength" min="0.1" max="10000" step="any" value="12"
+                                    inputmode="decimal">
+                                <span class="sw-space-unit-label">ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="sw-space-rotate">
+                        <input type="checkbox" id="swShedRotate">
+                        <span class="sw-space-rotate-icon">
+                            <i class="fa-solid fa-rotate" aria-hidden="true"></i>
+                        </span>
+                        <span>
+                            <strong>Rotate the shed layout</strong>
+                            <small>Swap the shed's width and length for comparison.</small>
+                        </span>
+                    </label>
+
+                    <div class="sw-space-error" id="swSpaceError" role="alert" hidden></div>
+
+                    <button type="button" class="sw-space-reset" id="swSpaceReset">
+                        <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                        Reset measurements
+                    </button>
+
+                </div>
+
+                <!-- VISUAL PLANNER -->
+                <div class="sw-space-visual-panel">
+
+                    <div class="sw-space-visual-top">
+                        <div>
+                            <span class="sw-space-step">03</span>
+                            <h3>Footprint Preview</h3>
+                        </div>
+                        <span class="sw-space-preview-label">ILLUSTRATIVE PLAN</span>
+                    </div>
+
+                    <div class="sw-space-canvas" id="swSpaceCanvas">
+                        <div class="sw-space-dimension sw-space-dimension-top">
+                            <span id="swSpaceAvailableWidthLabel">20 ft</span>
+                        </div>
+
+                        <div class="sw-space-dimension sw-space-dimension-left">
+                            <span id="swSpaceAvailableLengthLabel">25 ft</span>
+                        </div>
+
+                        <div class="sw-space-yard" id="swSpaceYard">
+                            <div class="sw-space-shed-footprint" id="swSpaceFootprint">
+                                <i class="fa-solid fa-warehouse" aria-hidden="true"></i>
+                                <strong>YOUR SHED</strong>
+                                <span id="swSpaceShedDimensions">10 × 12 ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-legend">
+                        <span><i class="sw-space-legend-yard"></i> Available area</span>
+                        <span><i class="sw-space-legend-shed"></i> Shed footprint</span>
+                    </div>
+
+                    <div class="sw-space-result" id="swSpaceResult" aria-live="polite">
+                        <span class="sw-space-result-icon">
+                            <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <span class="sw-space-result-label">INITIAL DIMENSION CHECK</span>
+                            <h4 id="swSpaceResultTitle">Checking your dimensions</h4>
+                            <p id="swSpaceResultText">
+                                Your footprint comparison will appear here.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sw-space-metrics">
+                        <div class="sw-space-metric">
+                            <span>Available area</span>
+                            <strong id="swSpaceAvailableArea">500 sq ft</strong>
+                        </div>
+                        <div class="sw-space-metric">
+                            <span>Shed footprint</span>
+                            <strong id="swSpaceShedArea">120 sq ft</strong>
+                        </div>
+                        <div class="sw-space-metric">
+                            <span>Area difference</span>
+                            <strong id="swSpaceRemainingArea">380 sq ft</strong>
+                        </div>
+                    </div>
+
+                    <p class="sw-space-disclaimer">
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                        This is a basic rectangular footprint comparison, not a
+                        site approval. Allow for door access, required clearances,
+                        drainage, foundations, property boundaries and local rules.
+                    </p>
+
+                    <a href="contact.html" class="sw-space-contact">
+                        Get Help Planning Your Shed
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 6: SHED FEATURE EXPLORER -->
+    <section class="sw-feature-section" id="shed-feature-explorer">
+        <div class="sw-feature-container">
+
+            <div class="sw-feature-heading">
+                <span class="sw-feature-eyebrow">DESIGNED AROUND YOUR NEEDS</span>
+                <h2>Explore the Details That <span>Matter Most</span></h2>
+                <p>
+                    The right features can make your shed more practical every day.
+                    Explore the options and discover what works best for your space.
+                </p>
+            </div>
+
+            <div class="sw-feature-layout">
+
+                <!-- LEFT: FEATURE SELECTOR -->
+                <div class="sw-feature-sidebar">
+                    <span class="sw-feature-sidebar-label">EXPLORE FEATURES</span>
+
+                    <button class="sw-feature-option is-active" type="button" data-feature="doors" aria-pressed="true">
+                        <span class="sw-feature-option-number">01</span>
+                        <span class="sw-feature-option-copy">
+                            <strong>Doors & Access</strong>
+                            <small>Make entry easier</small>
+                        </span>
+                        <span class="sw-feature-option-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <button class="sw-feature-option" type="button" data-feature="windows" aria-pressed="false">
+                        <span class="sw-feature-option-number">02</span>
+                        <span class="sw-feature-option-copy">
+                            <strong>Windows & Light</strong>
+                            <small>Bring in natural light</small>
+                        </span>
+                        <span class="sw-feature-option-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <button class="sw-feature-option" type="button" data-feature="storage" aria-pressed="false">
+                        <span class="sw-feature-option-number">03</span>
+                        <span class="sw-feature-option-copy">
+                            <strong>Storage & Shelving</strong>
+                            <small>Organize your essentials</small>
+                        </span>
+                        <span class="sw-feature-option-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <button class="sw-feature-option" type="button" data-feature="ventilation" aria-pressed="false">
+                        <span class="sw-feature-option-number">04</span>
+                        <span class="sw-feature-option-copy">
+                            <strong>Ventilation</strong>
+                            <small>Plan for airflow</small>
+                        </span>
+                        <span class="sw-feature-option-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <button class="sw-feature-option" type="button" data-feature="roof" aria-pressed="false">
+                        <span class="sw-feature-option-number">05</span>
+                        <span class="sw-feature-option-copy">
+                            <strong>Roof & Protection</strong>
+                            <small>Consider local weather</small>
+                        </span>
+                        <span class="sw-feature-option-arrow" aria-hidden="true">↗</span>
+                    </button>
+
+                    <div class="sw-feature-sidebar-note">
+                        <span class="sw-feature-note-mark" aria-hidden="true">i</span>
+                        <p>Available features depend on the selected shed model.</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: DYNAMIC FEATURE DETAILS -->
+                <div class="sw-feature-detail" aria-live="polite">
+
+                    <div class="sw-feature-image-wrap">
+                        <img id="swFeatureImage" src="images/feature-doors.jpg"
+                            alt="Outdoor storage shed with wide double doors" loading="lazy">
+
+                        <span class="sw-feature-image-tag" id="swFeatureTag">
+                            ACCESS & ENTRY
+                        </span>
+
+                        <span class="sw-feature-image-count" id="swFeatureCount">
+                            FEATURE 01 / 05
+                        </span>
+                    </div>
+
+                    <div class="sw-feature-detail-content">
+                        <div class="sw-feature-detail-top">
+                            <div>
+                                <span class="sw-feature-detail-kicker" id="swFeatureKicker">
+                                    EASY EVERYDAY ACCESS
+                                </span>
+                                <h3 id="swFeatureTitle">Make room for easier access.</h3>
+                            </div>
+
+                            <span class="sw-feature-detail-icon" id="swFeatureIcon" aria-hidden="true">
+                                <i class="fa-solid fa-door-open"></i>
+                            </span>
+                        </div>
+
+                        <p class="sw-feature-description" id="swFeatureDescription">
+                            Think about what you plan to store and how often you will need
+                            to move items in and out. The right door arrangement can make
+                            everyday use more convenient.
+                        </p>
+
+                        <div class="sw-feature-benefits">
+                            <span class="sw-feature-benefits-label">WHAT TO CONSIDER</span>
+                            <ul id="swFeatureBenefits">
+                                <li>Width of your largest stored items</li>
+                                <li>Space needed to open the doors</li>
+                                <li>Clear access around the shed entrance</li>
+                            </ul>
+                        </div>
+
+                        <div class="sw-feature-bottom">
+                            <div class="sw-feature-tip">
+                                <span class="sw-feature-tip-icon" aria-hidden="true">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </span>
+                                <div>
+                                    <strong>Planning tip</strong>
+                                    <p id="swFeatureTip">
+                                        Measure your largest equipment before choosing a door setup.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a class="sw-feature-cta" href="contact.html">
+                                Discuss Your Options
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sw-feature-footer">
+                <span class="sw-feature-footer-line"></span>
+                <p>Small details. A more useful shed.</p>
+                <span class="sw-feature-footer-line"></span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 7: CUSTOMIZATION FINAL CTA -->
+    <section class="sw-final-cta" id="sw-customization-cta">
+        <div class="sw-final-cta-container">
+
+            <div class="sw-final-cta-content">
+                <span class="sw-final-cta-eyebrow">
+                    <span class="sw-final-cta-dot"></span>
+                    YOUR NEXT STEP STARTS HERE
+                </span>
+
+                <h2>
+                    A Shed That Fits
+                    <span>Your Everyday Life.</span>
+                </h2>
+
+                <p class="sw-final-cta-description">
+                    From choosing the right size to planning practical features,
+                    let's discuss your requirements and find a shed solution
+                    that works for your space.
+                </p>
+
+                <div class="sw-final-cta-actions">
+                    <a href="contact.html" class="sw-final-cta-primary">
+                        Talk to Our Team
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="products.html" class="sw-final-cta-secondary">
+                        Explore Our Sheds
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="sw-final-cta-divider"></div>
+
+                <div class="sw-final-cta-points">
+                    <div class="sw-final-cta-point">
+                        <span class="sw-final-cta-point-icon">
+                            <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Right-Sized Planning</strong>
+                            <p>Start with your available space.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-final-cta-point">
+                        <span class="sw-final-cta-point-icon">
+                            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Practical Features</strong>
+                            <p>Focus on what you really need.</p>
+                        </div>
+                    </div>
+
+                    <div class="sw-final-cta-point">
+                        <span class="sw-final-cta-point-icon">
+                            <i class="fa-regular fa-comments" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Personal Guidance</strong>
+                            <p>Discuss available options with our team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sw-final-cta-visual">
+                <img src="images/customization-final-shed.jpg"
+                    alt="Finished outdoor storage shed in a landscaped backyard" loading="lazy">
+
+                <div class="sw-final-cta-image-overlay"></div>
+
+                <div class="sw-final-cta-image-caption">
+                    <span class="sw-final-cta-caption-label">MAKE IT YOURS</span>
+                    <h3>Space for what matters.</h3>
+                    <p>Thoughtful choices. Everyday usefulness.</p>
+                </div>
+
+                <div class="sw-final-cta-image-badge">
+                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    <span>
+                        <strong>Your Space</strong>
+                        <small>Your Requirements</small>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= SHEDWORKS FOOTER ================= -->
+    <footer class="sw-footer">
+
+        <!-- Main Footer -->
+        <div class="sw-footer-main">
+            <div class="sw-footer-container">
+
+                <!-- Brand Column -->
+                <div class="sw-footer-brand">
+                    <a href="index.html" class="sw-footer-logo">
+                        <img src="images/logo-light.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+                    </a>
+
+                    <p class="sw-footer-description">
+                        Practical outdoor spaces, built around your needs.
+                        Discover durable storage sheds and customizable
+                        outdoor buildings designed to last.
+                    </p>
+
+                    <div class="sw-footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sw-footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="sw-footer-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Storage Sheds</a></li>
+                        <li><a href="products.html">Garden Sheds</a></li>
+                        <li><a href="products.html">Metal Buildings</a></li>
+                        <li><a href="products.html">Wooden Buildings</a></li>
+                        <li><a href="customization.html">Custom Buildings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="sw-footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="customization.html">Customization</a></li>
+                        <li><a href="delivery-installation.html">Delivery</a></li>
+                        <li><a href="delivery-installation.html">Installation</a></li>
+                        <li><a href="contact.html">Request an Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sw-footer-newsletter">
+                    <h3>Stay in the Loop</h3>
+
+                    <p>
+                        Get helpful ideas and updates for your
+                        outdoor space.
+                    </p>
+
+                    <form class="sw-newsletter-form" id="swNewsletterForm">
+                        <label class="sw-sr-only" for="swNewsletterEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="swNewsletterEmail" name="email" placeholder="Enter your email" required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="sw-newsletter-note" id="swNewsletterMessage" aria-live="polite">
+                        Join us for practical outdoor inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="sw-footer-bottom">
+            <div class="sw-footer-bottom-inner">
+
+                <p>
+                    &copy; <span id="swCopyrightYear"></span>
+                    ShedWorks. All rights reserved.
+                </p>
+
+                <div class="sw-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============== END SHEDWORKS FOOTER =============== -->
+
+
+    <!-- Scroll To Top Button -->
+    <button class="sw-scroll-top" id="swScrollTop" type="button" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

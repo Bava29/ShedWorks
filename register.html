@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <main class="sw-auth-page sw-auth-register-page">
+        <div class="sw-auth-tools" aria-label="Display settings">
+            <button class="sw-auth-tool" id="sw-theme-toggle" type="button" aria-label="Toggle dark mode"
+                title="Toggle dark mode">
+                <i class="fa-solid fa-moon" id="sw-theme-icon"></i>
+            </button>
+            <button class="sw-auth-tool" id="sw-rtl-toggle" type="button" aria-label="Toggle right-to-left layout"
+                title="Toggle RTL layout">
+                <i class="fa-solid fa-right-left" id="sw-theme-icon"></i>
+            </button>
+        </div>
+
+        <section class="sw-auth-card" aria-labelledby="sw-register-title">
+            <a class="sw-auth-logo" href="index.html" aria-label="ShedWorks home">
+                <img src="images/logo.png" alt="ShedWorks">
+            </a>
+
+            <div class="sw-auth-heading">
+                <h1 id="sw-register-title">Create your account.</h1>
+                <p>Join ShedWorks and start planning your space.</p>
+            </div>
+
+            <form class="sw-auth-form" id="sw-register-form">
+                <div class="sw-auth-field">
+                    <label for="sw-register-name">Full name</label>
+                    <div class="sw-auth-input-wrap">
+                        <i class="fa-regular fa-user sw-auth-input-icon" aria-hidden="true"></i>
+                        <input id="sw-register-name" name="name" type="text" placeholder="Your full name"
+                            autocomplete="name" required>
+                    </div>
+                </div>
+
+                <div class="sw-auth-field">
+                    <label for="sw-register-email">Email address</label>
+                    <div class="sw-auth-input-wrap">
+                        <i class="fa-regular fa-envelope sw-auth-input-icon" aria-hidden="true"></i>
+                        <input id="sw-register-email" name="email" type="email" placeholder="you@example.com"
+                            autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="sw-auth-field">
+                    <label for="sw-register-password">Password</label>
+                    <div class="sw-auth-input-wrap">
+                        <i class="fa-solid fa-lock sw-auth-input-icon" aria-hidden="true"></i>
+                        <input id="sw-register-password" name="password" type="password" placeholder="Create a password"
+                            autocomplete="new-password" minlength="8" required>
+                        <button class="sw-auth-eye" type="button" data-password-toggle="sw-register-password"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <small class="sw-auth-hint">Use at least 8 characters.</small>
+                </div>
+
+                <div class="sw-auth-field">
+                    <label for="sw-register-confirm">Confirm password</label>
+                    <div class="sw-auth-input-wrap">
+                        <i class="fa-solid fa-shield-halved sw-auth-input-icon" aria-hidden="true"></i>
+                        <input id="sw-register-confirm" name="confirmPassword" type="password"
+                            placeholder="Enter your password again" autocomplete="new-password" minlength="8" required>
+                        <button class="sw-auth-eye" type="button" data-password-toggle="sw-register-confirm"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <label class="sw-auth-remember sw-auth-terms-check">
+                    <input type="checkbox" name="agree" required>
+                    <span>I agree to the <a href="terms.html" class="sw-auth-text-link">Terms</a> and <a
+                            href="privacy.html" class="sw-auth-text-link">Privacy Policy</a>.</span>
+                </label>
+
+                <button class="sw-auth-submit" type="submit">
+                    <span>Create Account</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <p class="sw-auth-feedback" id="sw-register-feedback" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="sw-auth-divider"><span>Or sign up with</span></div>
+
+            <div class="sw-auth-socials">
+                <button class="sw-auth-social sw-auth-facebook" type="button" data-social="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </button>
+
+                <button class="sw-auth-social sw-auth-google" type="button" data-social="Google">
+                    <img src="images/google-logo.svg" alt="" aria-hidden="true">
+                    <span>Google</span>
+                </button>
+
+                <button class="sw-auth-social sw-auth-apple" type="button" data-social="Apple">
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+                    <span>Apple</span>
+                </button>
+            </div>
+
+            <p class="sw-auth-switch">
+                Already have an account?
+                <a href="login.html">Log in <i class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"></i></a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

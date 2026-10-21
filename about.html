@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>ShedWorks</title>
+
+    <meta name="description"
+        content="Explore durable storage sheds, garden sheds, garages, and customizable outdoor buildings with ShedWorks.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Website Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="sw-header" id="siteHeader">
+        <div class="sw-header-inner">
+
+            <!-- Logo: Left Edge -->
+            <a href="index.html" class="sw-logo" aria-label="ShedWorks Home">
+                <img src="images/logo.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+            </a>
+
+            <!-- Desktop Navigation: Center -->
+            <nav class="sw-desktop-nav" aria-label="Main navigation">
+                <div class="sw-nav-item sw-home-item">
+                    <button class="sw-nav-link sw-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-home-dropdown" id="swHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="sw-nav-link">About</a>
+                <a href="products.html" class="sw-nav-link">Products</a>
+                <a href="customization.html" class="sw-nav-link">Customization</a>
+                <a href="delivery-installation.html" class="sw-nav-link">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html" class="sw-nav-link">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions: Right Edge -->
+            <div class="sw-desktop-actions">
+
+                <button class="sw-icon-btn sw-theme-toggle" type="button" aria-label="Enable dark mode"
+                    title="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="sw-icon-btn sw-rtl-toggle" type="button" aria-label="Switch to RTL layout"
+                    aria-pressed="false" title="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="sw-login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+
+            <!-- Responsive Menu Toggle -->
+            <button class="sw-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="swMobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Responsive Navigation Panel -->
+        <div class="sw-mobile-menu" id="swMobileMenu" aria-hidden="true">
+
+            <nav class="sw-mobile-nav" aria-label="Mobile navigation">
+
+                <div class="sw-mobile-home">
+                    <button class="sw-mobile-home-trigger" type="button" aria-expanded="false"
+                        aria-controls="swMobileHomeDropdown">
+                        <span>Home</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="sw-mobile-home-dropdown" id="swMobileHomeDropdown">
+                        <a href="index.html">Home 1</a>
+                        <a href="home-2.html">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="customization.html">Customization</a>
+                <a href="delivery-installation.html">
+                    Delivery &amp; Installation
+                </a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+            <!-- Toggles and Login Inside Responsive Menu -->
+            <div class="sw-mobile-actions">
+
+                <button class="sw-mobile-action sw-theme-toggle" type="button" aria-label="Enable dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+                <button class="sw-mobile-action sw-rtl-toggle" type="button" aria-pressed="false"
+                    aria-label="Switch to RTL layout">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>RTL</span>
+                </button>
+
+                <a href="login.html" class="sw-mobile-login">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Login</span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- =============== END HEADER =============== -->
+
+
+    <!-- =========================================
+     SHEDWORKS — COMMON INNER PAGE HERO
+========================================= -->
+    <section class="sw-pagehero about-banner" id="pageHero">
+
+        <div class="sw-pagehero-overlay"></div>
+
+        <div class="sw-pagehero-container">
+
+            <div class="sw-pagehero-content">
+
+                <div class="sw-pagehero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span aria-current="page">About</span>
+                </div>
+
+                <h1 class="sw-pagehero-title">
+                    About Us
+                </h1>
+
+                <p class="sw-pagehero-description">
+                    At ShedWorks, we believe every outdoor space has more potential. We help you find practical building
+                    solutions that fit your property, your plans and the way you live.
+                </p>
+
+                <div class="sw-pagehero-bottom">
+                    <span class="sw-pagehero-bottom-line"></span>
+                    <span class="sw-pagehero-bottom-text">
+                        YOUR SPACE. YOUR POSSIBILITIES.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =============== END COMMON PAGE HERO =============== -->
+
+
+    <!-- ==========================================
+     ABOUT PAGE - OUR STORY
+=========================================== -->
+    <section class="sw-about-story" id="ourStory">
+
+        <div class="sw-about-story-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="sw-about-story-content">
+
+                <span class="sw-about-story-eyebrow">
+                    <span class="sw-about-story-line"></span>
+                    OUR STORY
+                </span>
+
+                <h2 class="sw-about-story-title">
+                    Built Around
+                    <span>What Matters.</span>
+                </h2>
+
+                <p class="sw-about-story-intro">
+                    Every property has potential. Sometimes, all it needs
+                    is the right space to bring that potential to life.
+                </p>
+
+                <p class="sw-about-story-text">
+                    At ShedWorks, we focus on helping people make better
+                    use of their outdoor spaces. Whether you need room
+                    for everyday essentials, a place to work on projects,
+                    or extra space for equipment, we believe the right
+                    building should fit your needs and your property.
+                </p>
+
+                <p class="sw-about-story-text">
+                    Our approach is simple: help you explore practical
+                    options, understand your choices and find a building
+                    that works for the way you use your space.
+                </p>
+
+                <a href="products.html" class="sw-about-story-btn">
+                    Explore Our Buildings
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="sw-about-story-visual">
+
+                <div class="sw-about-story-image">
+                    <img src="images/about-our-story.jpg" alt="Outdoor storage building in a landscaped backyard"
+                        loading="lazy">
+                </div>
+
+                <div class="sw-about-story-note">
+
+                    <div class="sw-about-story-note-icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+
+                    <div class="sw-about-story-note-content">
+                        <h3>Space with a Purpose</h3>
+                        <p>Practical buildings for everyday needs.</p>
+                    </div>
+
+                </div>
+
+                <div class="sw-about-story-caption">
+                    <span class="sw-about-story-caption-dot"></span>
+                    YOUR SPACE. YOUR POSSIBILITIES.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+     ABOUT PAGE - OUR IMPACT / STATS
+=========================================== -->
+    <section class="sw-about-stats" id="ourImpact">
+
+        <div class="sw-about-stats-container">
+
+            <!-- SECTION HEADING -->
+            <div class="sw-about-stats-heading">
+
+                <span class="sw-about-stats-eyebrow">
+                    OUR IMPACT
+                </span>
+
+                <h2>
+                    Making Space for
+                    <span>Better Possibilities.</span>
+                </h2>
+
+                <p>
+                    Every building starts with a purpose.
+                    Our focus is helping you find the right space
+                    for the things that matter.
+                </p>
+
+            </div>
+
+            <!-- STATS CARDS -->
+            <div class="sw-about-stats-grid">
+
+                <article class="sw-about-stat-card">
+                    <div class="sw-about-stat-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <span class="sw-about-stat-number">01</span>
+
+                    <h3>Building Options</h3>
+
+                    <p>
+                        Explore styles for different outdoor space needs.
+                    </p>
+                </article>
+
+                <article class="sw-about-stat-card">
+                    <div class="sw-about-stat-icon">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+
+                    <span class="sw-about-stat-number">02</span>
+
+                    <h3>Flexible Choices</h3>
+
+                    <p>
+                        Find options to suit your space and preferences.
+                    </p>
+                </article>
+
+                <article class="sw-about-stat-card">
+                    <div class="sw-about-stat-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <span class="sw-about-stat-number">03</span>
+
+                    <h3>Personalized Spaces</h3>
+
+                    <p>
+                        Choose features that work for your requirements.
+                    </p>
+                </article>
+
+                <article class="sw-about-stat-card">
+                    <div class="sw-about-stat-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <span class="sw-about-stat-number">04</span>
+
+                    <h3>Helpful Guidance</h3>
+
+                    <p>
+                        Get support while exploring your building options.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- BOTTOM MESSAGE -->
+            <div class="sw-about-stats-bottom">
+                <div class="sw-about-stats-bottom-mark">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <p>
+                    <strong>One goal.</strong>
+                    Help you make better use of your outdoor space.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+     ABOUT PAGE - VISION & MISSION
+=========================================== -->
+    <section class="sw-about-purpose" id="ourPurpose">
+
+        <div class="sw-about-purpose-container">
+
+            <!-- SECTION HEADER -->
+            <div class="sw-about-purpose-heading">
+                <span class="sw-about-purpose-eyebrow">
+                    WHAT GUIDES US
+                </span>
+
+                <h2>
+                    Our Vision. <span>Our Mission.</span>
+                </h2>
+
+                <p>
+                    A clear purpose guides the way we help people
+                    make more of their outdoor spaces.
+                </p>
+            </div>
+
+            <!-- VISION & MISSION CARDS -->
+            <div class="sw-about-purpose-grid">
+
+                <!-- VISION CARD -->
+                <article class="sw-about-purpose-card sw-about-vision">
+
+                    <div class="sw-about-purpose-card-top">
+                        <div class="sw-about-purpose-icon">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+
+                        <span class="sw-about-purpose-label">
+                            OUR VISION
+                        </span>
+                    </div>
+
+                    <h3>
+                        A Better Space for
+                        <span>Every Possibility.</span>
+                    </h3>
+
+                    <p>
+                        We envision outdoor spaces that do more.
+                        Spaces where people can organize their essentials,
+                        pursue their interests and create room for what
+                        matters most.
+                    </p>
+
+                    <div class="sw-about-purpose-bottom">
+                        <span class="sw-about-purpose-line"></span>
+                        <span>THE FUTURE WE SEE</span>
+                    </div>
+
+                </article>
+
+                <!-- MISSION CARD -->
+                <article class="sw-about-purpose-card sw-about-mission">
+
+                    <div class="sw-about-purpose-card-top">
+                        <div class="sw-about-purpose-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+
+                        <span class="sw-about-purpose-label">
+                            OUR MISSION
+                        </span>
+                    </div>
+
+                    <h3>
+                        Practical Spaces.
+                        <span>Thoughtful Choices.</span>
+                    </h3>
+
+                    <p>
+                        Our mission is to help customers explore practical
+                        outdoor building options, understand their choices
+                        and find solutions suited to their needs and
+                        available space.
+                    </p>
+
+                    <div class="sw-about-purpose-bottom">
+                        <span class="sw-about-purpose-line"></span>
+                        <span>WHAT WE WORK TOWARD</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+     ABOUT PAGE - OUR GALLERY
+=========================================== -->
+    <section class="sw-about-gallery" id="ourGallery">
+
+        <div class="sw-about-gallery-container">
+
+            <!-- SECTION HEADER -->
+            <div class="sw-about-gallery-header">
+                <div>
+                    <span class="sw-about-gallery-eyebrow">
+                        OUR GALLERY
+                    </span>
+
+                    <h2>
+                        Take a Look <span>Around.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Explore outdoor buildings, practical spaces
+                    and ideas for making more room on your property.
+                </p>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="sw-about-gallery-grid">
+
+                <!-- IMAGE 1 -->
+                <a href="products.html" class="sw-about-gallery-item sw-about-gallery-large">
+
+                    <img src="images/about-gallery-1.jpg" alt="Outdoor storage shed in a landscaped backyard"
+                        loading="lazy">
+
+                    <div class="sw-about-gallery-overlay">
+                        <span>01 / STORAGE</span>
+                        <h3>Room for Everyday Essentials</h3>
+                        <span class="sw-about-gallery-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+
+                </a>
+
+                <!-- IMAGE 2 -->
+                <a href="products.html" class="sw-about-gallery-item">
+
+                    <img src="images/about-gallery-2.jpg" alt="Wooden outdoor workshop with a workbench" loading="lazy">
+
+                    <div class="sw-about-gallery-overlay">
+                        <span>02 / WORKSHOP</span>
+                        <h3>Space to Create</h3>
+                        <span class="sw-about-gallery-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+
+                </a>
+
+                <!-- IMAGE 3 -->
+                <a href="customization.html" class="sw-about-gallery-item">
+
+                    <img src="images/about-gallery-3.jpg" alt="Close-up of a shed exterior and double doors"
+                        loading="lazy">
+
+                    <div class="sw-about-gallery-overlay">
+                        <span>03 / DETAILS</span>
+                        <h3>Made for Your Needs</h3>
+                        <span class="sw-about-gallery-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+
+                </a>
+
+                <!-- IMAGE 4 -->
+                <a href="products.html" class="sw-about-gallery-item">
+
+                    <img src="images/about-gallery-4.jpg" alt="Large outdoor building for equipment storage"
+                        loading="lazy">
+
+                    <div class="sw-about-gallery-overlay">
+                        <span>04 / EXTRA SPACE</span>
+                        <h3>More Room to Work With</h3>
+                        <span class="sw-about-gallery-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+
+                </a>
+
+
+                <a href="products.html" class="sw-about-gallery-item">
+
+                    <img src="images/about-gallery-5.jpg" alt="Modern backyard shed with a practical outdoor workspace"
+                        loading="lazy">
+
+                    <div class="sw-about-gallery-overlay">
+                        <span>05 / YOUR POSSIBILITIES</span>
+                        <h3>A Space of Your Own</h3>
+                        <span class="sw-about-gallery-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!-- BOTTOM CTA -->
+            <div class="sw-about-gallery-bottom">
+                <p>Have a space in mind? Let's find the right fit.</p>
+
+                <a href="products.html" class="sw-about-gallery-btn">
+                    Explore Our Buildings
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHAT MAKES US DIFFERENT -->
+    <section class="sw-about-different">
+
+        <div class="sw-about-different-container">
+
+            <div class="sw-about-different-heading">
+                <span class="sw-about-different-eyebrow">
+                    THE SHEDWORKS DIFFERENCE
+                </span>
+
+                <h2>
+                    More Than a Building.<br>
+                    <span>A Better Experience.</span>
+                </h2>
+
+                <p>
+                    Finding the right outdoor building should feel simple.
+                    We focus on practical choices, thoughtful details and
+                    guidance that helps you make the most of your space.
+                </p>
+            </div>
+
+            <div class="sw-about-different-grid">
+
+                <article class="sw-about-different-card">
+                    <div class="sw-about-different-number">01</div>
+
+                    <div class="sw-about-different-icon">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+
+                    <h3>Options That Fit</h3>
+
+                    <p>
+                        Explore building sizes and styles to find an option
+                        that works with your property and your plans.
+                    </p>
+
+                    <a href="products.html" class="sw-about-different-link">
+                        Explore Buildings
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="sw-about-different-card">
+                    <div class="sw-about-different-number">02</div>
+
+                    <div class="sw-about-different-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+
+                    <h3>Personalized Choices</h3>
+
+                    <p>
+                        Consider exterior colors, door styles and other
+                        available options to suit your preferences.
+                    </p>
+
+                    <a href="customization.html" class="sw-about-different-link">
+                        Discover Options
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="sw-about-different-card">
+                    <div class="sw-about-different-number">03</div>
+
+                    <div class="sw-about-different-icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+
+                    <h3>Purposeful Design</h3>
+
+                    <p>
+                        Think beyond storage and create a dedicated space
+                        for equipment, hobbies or everyday projects.
+                    </p>
+
+                    <a href="products.html" class="sw-about-different-link">
+                        Find Your Space
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="sw-about-different-card">
+                    <div class="sw-about-different-number">04</div>
+
+                    <div class="sw-about-different-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <h3>Helpful Guidance</h3>
+
+                    <p>
+                        Get in touch with our team to discuss your needs
+                        and explore the options available to you.
+                    </p>
+
+                    <a href="contact.html" class="sw-about-different-link">
+                        Talk to Our Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="sw-about-different-bottom">
+                <span class="sw-about-different-bottom-line"></span>
+
+                <p>
+                    <i class="fa-solid fa-check"></i>
+                    Designed around your space, your needs and your plans.
+                </p>
+
+                <span class="sw-about-different-bottom-line"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT PAGE - MEET OUR TEAM -->
+    <section class="sw-about-team">
+
+        <div class="sw-about-team-container">
+
+            <div class="sw-about-team-header">
+                <div>
+                    <span class="sw-about-team-eyebrow">THE PEOPLE BEHIND SHEDWORKS</span>
+                    <h2>Meet the People Who <span>Make It Happen.</span></h2>
+                </div>
+
+                <p>
+                    Every great space starts with understanding what matters to you.
+                    Get to know the people dedicated to helping you explore your options.
+                </p>
+            </div>
+
+            <div class="sw-about-team-grid">
+
+                <!-- Team Member 1 -->
+                <article class="sw-about-team-card">
+                    <div class="sw-about-team-image">
+                        <img src="images/about-team-1.jpg" alt="ShedWorks customer support team member" loading="lazy">
+
+                        <span class="sw-about-team-index">01</span>
+                    </div>
+
+                    <div class="sw-about-team-info">
+                        <div>
+                            <span class="sw-about-team-role">CUSTOMER SUPPORT</span>
+                            <h3>Customer Care Specialist</h3>
+                        </div>
+
+                        <span class="sw-about-team-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <!-- Team Member 2 -->
+                <article class="sw-about-team-card">
+                    <div class="sw-about-team-image">
+                        <img src="images/about-team-2.jpg" alt="ShedWorks building specialist" loading="lazy">
+
+                        <span class="sw-about-team-index">02</span>
+                    </div>
+
+                    <div class="sw-about-team-info">
+                        <div>
+                            <span class="sw-about-team-role">BUILDING EXPERTISE</span>
+                            <h3>Building Specialist</h3>
+                        </div>
+
+                        <span class="sw-about-team-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <!-- Team Member 3 -->
+                <article class="sw-about-team-card">
+                    <div class="sw-about-team-image">
+                        <img src="images/about-team-3.jpg" alt="ShedWorks customization advisor" loading="lazy">
+
+                        <span class="sw-about-team-index">03</span>
+                    </div>
+
+                    <div class="sw-about-team-info">
+                        <div>
+                            <span class="sw-about-team-role">PERSONALIZED OPTIONS</span>
+                            <h3>Customization Advisor</h3>
+                        </div>
+
+                        <span class="sw-about-team-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="sw-about-team-footer">
+                <div class="sw-about-team-footer-text">
+                    <span class="sw-about-team-footer-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </span>
+
+                    <div>
+                        <h3>Have a project in mind?</h3>
+                        <p>Let's talk about the space you're looking to create.</p>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="sw-about-team-contact">
+                    Connect With Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT PAGE - FINAL CTA -->
+    <section class="sw-about-final-cta">
+
+        <div class="sw-about-final-cta-container">
+
+            <div class="sw-about-final-cta-content">
+
+                <span class="sw-about-final-cta-eyebrow">
+                    YOUR NEXT STEP STARTS HERE
+                </span>
+
+                <h2>
+                    Ready to Make Room
+                    <span>for More?</span>
+                </h2>
+
+                <p>
+                    From everyday storage to a space for your next big idea,
+                    find a building that fits your plans. Let's make better
+                    use of the space you already have.
+                </p>
+
+                <div class="sw-about-final-cta-actions">
+
+                    <a href="products.html" class="sw-about-final-cta-primary">
+                        Explore Our Buildings
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="sw-about-final-cta-secondary">
+                        Talk to Our Team
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+                <div class="sw-about-final-cta-note">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Your space. Your plans. Your possibilities.</span>
+                </div>
+
+            </div>
+
+            <div class="sw-about-final-cta-visual">
+
+                <img src="images/about-final-cta.jpg" alt="Modern outdoor storage shed in a landscaped backyard"
+                    loading="lazy">
+
+                <div class="sw-about-final-cta-image-label">
+                    <span class="sw-about-final-cta-label-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </span>
+
+                    <div>
+                        <strong>Make Space for What Matters</strong>
+                        <span>Find the right fit for your plans.</span>
+                    </div>
+                </div>
+
+                <span class="sw-about-final-cta-decoration"></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHEDWORKS FOOTER ================= -->
+    <footer class="sw-footer">
+
+        <!-- Main Footer -->
+        <div class="sw-footer-main">
+            <div class="sw-footer-container">
+
+                <!-- Brand Column -->
+                <div class="sw-footer-brand">
+                    <a href="index.html" class="sw-footer-logo">
+                        <img src="images/logo-light.png" alt="ShedWorks - Storage Sheds and Outdoor Buildings">
+                    </a>
+
+                    <p class="sw-footer-description">
+                        Practical outdoor spaces, built around your needs.
+                        Discover durable storage sheds and customizable
+                        outdoor buildings designed to last.
+                    </p>
+
+                    <div class="sw-footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sw-footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="sw-footer-column">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Storage Sheds</a></li>
+                        <li><a href="products.html">Garden Sheds</a></li>
+                        <li><a href="products.html">Metal Buildings</a></li>
+                        <li><a href="products.html">Wooden Buildings</a></li>
+                        <li><a href="customization.html">Custom Buildings</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="sw-footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="customization.html">Customization</a></li>
+                        <li><a href="delivery-installation.html">Delivery</a></li>
+                        <li><a href="delivery-installation.html">Installation</a></li>
+                        <li><a href="contact.html">Request an Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sw-footer-newsletter">
+                    <h3>Stay in the Loop</h3>
+
+                    <p>
+                        Get helpful ideas and updates for your
+                        outdoor space.
+                    </p>
+
+                    <form class="sw-newsletter-form" id="swNewsletterForm">
+                        <label class="sw-sr-only" for="swNewsletterEmail">
+                            Email address
+                        </label>
+
+                        <input type="email" id="swNewsletterEmail" name="email" placeholder="Enter your email" required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="sw-newsletter-note" id="swNewsletterMessage" aria-live="polite">
+                        Join us for practical outdoor inspiration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="sw-footer-bottom">
+            <div class="sw-footer-bottom-inner">
+
+                <p>
+                    &copy; <span id="swCopyrightYear"></span>
+                    ShedWorks. All rights reserved.
+                </p>
+
+                <div class="sw-footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- =============== END SHEDWORKS FOOTER =============== -->
+
+
+    <!-- Scroll To Top Button -->
+    <button class="sw-scroll-top" id="swScrollTop" type="button" aria-label="Scroll to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
