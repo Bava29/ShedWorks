@@ -28534,8 +28534,8 @@ html[dir="rtl"] .sw-deliveryday-step {
 }
 
 html[dir="rtl"] .sw-deliveryday-step:not(:nth-last-child(2))::after {
-    right: 23px;
-    left: auto;
+    left: 23px;
+    right: auto;
 }
 
 html[dir="rtl"] .sw-installflow-stage {
@@ -31199,6 +31199,7 @@ html[dir="rtl"] .sw-contact-info-link:hover i {
    CUSTOMIZATION SECTIONS — MOBILE ONLY
 ========================================= */
 @media screen and (max-width: 600px) {
+
     /* Feature details: keep benefit text and the planning CTA from competing for one row. */
     #shed-feature-explorer .sw-feature-detail-content {
         padding: 24px 20px !important;
@@ -31284,7 +31285,7 @@ html[dir="rtl"] .sw-contact-info-link:hover i {
         margin: 0 !important;
     }
 
-    #sw-customization-cta .sw-final-cta-visual > img {
+    #sw-customization-cta .sw-final-cta-visual>img {
         display: block !important;
         width: 100% !important;
         height: 100% !important;
@@ -31593,4 +31594,247 @@ html[dir="rtl"] .sw-contact-info-link:hover i {
         justify-content: center !important;
         text-align: center !important;
     }
+}
+
+
+/* Keep the RTL delivery timeline connector on the marker's center axis. */
+html[dir="rtl"] .sw-deliveryday-step:not(:nth-last-child(2))::after {
+    left: 23px;
+    right: auto;
+}
+
+@media (max-width: 600px) {
+    html[dir="rtl"] .sw-deliveryday-step:not(:nth-last-child(2))::after {
+        left: 18px;
+        right: auto;
+    }
+}
+
+
+/* =========================================
+   HOME 2 — RTL STATISTICS DIVIDER FIX
+========================================= */
+
+html[dir="rtl"] .sw2-why-stats {
+    direction: rtl;
+}
+
+html[dir="rtl"] .sw2-why-stat {
+    min-width: 0;
+    padding-inline: 18px;
+    box-sizing: border-box;
+}
+
+html[dir="rtl"] .sw2-why-stat p {
+    padding-inline: 6px;
+    line-height: 1.6;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+html[dir="rtl"] .sw2-why-stat:not(:last-child) {
+    border-left: 1px solid #D9D8D2;
+    border-right: 0;
+}
+
+html[dir="rtl"].dark-mode .sw2-why-stat:not(:last-child) {
+    border-left-color: #344454;
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .sw2-why-stat {
+        padding-inline: 10px;
+    }
+
+    html[dir="rtl"] .sw2-why-stat p {
+        font-size: 11px;
+        padding-inline: 3px;
+    }
+}
+
+
+/* FORCE RTL: Link text right, arrow left */
+html[dir="rtl"] .sw-products-size-link {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    direction: rtl !important;
+    text-align: right !important;
+
+    padding-right: 0 !important;
+    padding-left: 36px !important;
+
+    justify-content: initial !important;
+    flex-direction: initial !important;
+}
+
+/* Pin arrow to the LEFT edge */
+html[dir="rtl"] .sw-products-size-link i,
+html[dir="rtl"] .sw-products-size-link svg {
+    position: absolute !important;
+    left: 0 !important;
+    right: auto !important;
+    top: 50% !important;
+    margin: 0 !important;
+    transform: translateY(10%) rotate(180deg) !important;
+}
+
+/* Ensure the card link area follows RTL */
+html[dir="rtl"] .sw-products-size-card .sw-products-size-link {
+    text-align: right !important;
+}
+
+
+/* =========================================
+   PRODUCTS — MATERIAL LINKS RTL ALIGNMENT
+   Text RIGHT | Arrow LEFT
+========================================= */
+
+html[dir="rtl"] .sw-products-material-link {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    direction: rtl !important;
+    text-align: right !important;
+    gap: 16px !important;
+}
+
+html[dir="rtl"] .sw-products-material-link i {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 0 !important;
+
+    flex: 0 0 auto !important;
+    transform: rotate(180deg);
+}
+
+
+/* FORCE RTL BUTTON POSITIONS — CUSTOMIZATION PAGE */
+html[dir="rtl"] .sw-studio-navigation {
+    display: flex !important;
+    flex-direction: row !important;
+    direction: ltr !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+/* Continue on LEFT */
+html[dir="rtl"] .sw-studio-navigation #swStudioNext {
+    order: 1 !important;
+    margin: 0 auto 0 0 !important;
+}
+
+/* Back on RIGHT */
+html[dir="rtl"] .sw-studio-navigation #swStudioBack {
+    order: 2 !important;
+    margin: 0 0 0 auto !important;
+}
+
+/* Keep button text readable in RTL */
+html[dir="rtl"] .sw-studio-navigation button {
+    direction: ltr !important;
+}
+
+
+/* =========================================
+   SHEDWORKS — FORCE CENTER HEADINGS IN RTL
+   Add at the VERY END of style.css
+========================================= */
+
+html[dir="rtl"] body .sw-studio .sw-studio-container>.sw-studio-heading,
+html[dir="rtl"] body .sw-material-tool .sw-material-container>.sw-material-heading {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] body .sw-studio .sw-studio-heading>.sw-studio-eyebrow,
+html[dir="rtl"] body .sw-material-tool .sw-material-heading>.sw-material-eyebrow {
+    display: block !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] body .sw-studio .sw-studio-heading>h2,
+html[dir="rtl"] body .sw-studio .sw-studio-heading>p,
+html[dir="rtl"] body .sw-material-tool .sw-material-heading>h2,
+html[dir="rtl"] body .sw-material-tool .sw-material-heading>p {
+    display: block !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    text-align-last: center !important;
+    direction: rtl !important;
+    align-self: center !important;
+}
+
+/* Keep the comparison section heading centered too */
+html[dir="rtl"] body .sw-material-comparison-heading {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] body .sw-material-comparison-heading>div,
+html[dir="rtl"] body .sw-material-comparison-heading>p,
+html[dir="rtl"] body .sw-material-comparison-heading h3 {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    text-align-last: center !important;
+}
+
+/* Align the RTL installation timeline connector to the number marker center. */
+html[dir="rtl"] .sw-installflow-stage:not(:last-child)::after {
+    left: 21px;
+    right: auto;
+}
+
+@media (max-width: 600px) {
+    html[dir="rtl"] .sw-installflow-stage:not(:last-child)::after {
+        left: 18px;
+        right: auto;
+    }
+}
+
+/* Right-align the checklist points in the RTL delivery FAQ contact panel. */
+html[dir="rtl"] .sw-deliveryfaq-help-point {
+    flex-direction: row;
+    text-align: right;
+}
+
+html[dir="rtl"] .sw-deliveryfaq-help-point span {
+    flex: 1;
+    text-align: right;
+}
+
+/* Align the phone number input to the right in RTL mode only. */
+html[dir="rtl"] #swEnquiryPhone {
+    text-align: right;
 }

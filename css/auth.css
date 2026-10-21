@@ -1069,3 +1069,31 @@ html[dir="rtl"] .sw-auth-field>label {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* Keep RTL layout adjustments inside the login/register card only. */
+html[dir="rtl"] .sw-auth-card {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .sw-auth-card .sw-auth-input-wrap {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .sw-auth-card .sw-auth-input-wrap input {
+    padding: 0 12px 0 0;
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .sw-auth-card .sw-auth-options,
+html[dir="rtl"] .sw-auth-card .sw-auth-remember {
+    flex-direction: row;
+}
+
+@media (max-width: 380px) {
+    html[dir="rtl"] .sw-auth-card .sw-auth-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
