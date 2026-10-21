@@ -6039,7 +6039,7 @@ html[dir="rtl"] .sw2-hero-text-link:hover>span {
 .sw2-why-benefit-content p {
     margin: 0;
     color: #586572;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 1.7;
 }
@@ -31892,4 +31892,120 @@ html.dark-mode .sw-material-tool .sw-material-interactive>span {
     background-color: #F5F3EE !important;
     box-shadow: 0 0 0 3px rgba(245, 243, 238, 0.16) !important;
     opacity: 1 !important;
+}
+
+
+/* iPad Mini — Center the About Team heading */
+@media (min-width: 600px) and (max-width: 850px) {
+    .sw-about-team .sw-about-team-header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 16px !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .sw-about-team .sw-about-team-header>div {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+    .sw-about-team .sw-about-team-eyebrow {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sw-about-team .sw-about-team-header h2 {
+        width: 100% !important;
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+    .sw-about-team .sw-about-team-header>p {
+        width: 100% !important;
+        max-width: 560px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+}
+
+
+/* =========================================
+   iPad Mini — Delivery Section Center Alignment
+========================================= */
+@media (min-width: 600px) and (max-width: 850px) {
+
+    /* Section heading */
+    .sw-delivery-section .sw-delivery-header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 18px !important;
+    }
+
+    .sw-delivery-section .sw-delivery-heading-content,
+    .sw-delivery-section .sw-delivery-intro {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-inline: auto !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-heading,
+    .sw-delivery-section .sw-delivery-heading span,
+    .sw-delivery-section .sw-delivery-intro p {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-text-link {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-inline: auto !important;
+    }
+
+    /* Bottom CTA card */
+    .sw-delivery-section .sw-delivery-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 16px !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-bottom-text {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-bottom-text>div {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-bottom-text h3,
+    .sw-delivery-section .sw-delivery-bottom-text p {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .sw-delivery-section .sw-delivery-button {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        align-self: center !important;
+        margin-inline: auto !important;
+    }
 }
