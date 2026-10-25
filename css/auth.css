@@ -377,6 +377,18 @@ html.dark-mode .sw-auth-text-link {
     box-shadow: 0 9px 20px rgba(16, 43, 67, 0.16);
 }
 
+html.dark-mode .sw-auth-submit {
+    border-color: #2D78A6;
+    background: #23658F;
+    color: #FFFFFF;
+}
+
+html.dark-mode .sw-auth-submit:hover {
+    border-color: #3B8DBD;
+    background: #2D78A6;
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.28);
+}
+
 .sw-auth-submit i {
     font-size: 13px;
 }
@@ -1016,14 +1028,16 @@ html[dir="rtl"] .sw-auth-field>label {
     }
 
     .sw-auth-options {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 9px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
     }
 
     html[dir="rtl"] .sw-auth-options {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
     }
 
     .sw-auth-socials {
